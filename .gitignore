@@ -1,0 +1,23 @@
+# Virtual Environment
+scrape_env/
+env/
+venv/
+.env
+
+# Massive Data Files (Must not be pushed to GitHub)
+data/
+*.jsonl
+*.parquet
+*.csv
+
+# Python Cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# PDF Spec Sheets (Optional to ignore, but good practice to keep repo clean)
+*.pdf
+
+# Operating System Files
+.DS_Store
+Thumbs.db
