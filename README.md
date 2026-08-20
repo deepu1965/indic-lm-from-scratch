@@ -70,13 +70,13 @@ We built `train_tokenizers.py` to train completely independent Hugging Face Byte
 
 ---
 
-## 3. Artifacts & Google Drive Links
-Due to GitHub file size limits, the massive corpus `.jsonl` files and the compiled tokenizer `.json` configurations are hosted securely on Google Drive for TA verification.
+## 3. Artifacts & Hosted Datasets
+Due to GitHub file size limits, the complete cleaned corpora (`.jsonl`), raw deduplicated files, and Parquet data are hosted on the Hugging Face Hub:
 
-* **Telugu Dataset (519M Tokens):** `[INSERT_DRIVE_LINK_HERE]`
-* **Nepali Dataset (~500M Tokens):** `[INSERT_DRIVE_LINK_HERE]`
-* **Telugu Tokenizer (5K):** `[INSERT_DRIVE_LINK_HERE]`
-* **Nepali Tokenizer (Best Size):** `[INSERT_DRIVE_LINK_HERE]`
+* **Complete Dataset Repo (Telugu + Nepali):** [https://huggingface.co/datasets/Deepu1965/indic-lm-dataset](https://huggingface.co/datasets/Deepu1965/indic-lm-dataset)
+* **Telugu Dataset (519M Tokens):** Hosted under `data/telugu/final_corpus/FINAL_telugu_corpus.jsonl` in HF Repo
+* **Nepali Dataset (~500M Tokens):** Hosted under `data/nepali/final_corpus/FINAL_nepali_corpus.jsonl` in HF Repo
+* **Trained Tokenizers:** Included in this Git repository under `models/tokenizers/` (`telugu/` and `nepali/`)
 
 ---
 ### Reproduction Steps
