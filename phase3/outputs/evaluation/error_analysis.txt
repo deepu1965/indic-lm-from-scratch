@@ -1,0 +1,172 @@
+============================================================
+OVERALL ERROR BREAKDOWN
+============================================================
+
+Condition: hi_pre
+  Total: 700
+  Reasoning Correct: 2 (0.29%)
+  Reasoning Incorrect: 698 (99.71%)
+  Error Categories:
+    - no_recognizable_answer: 620 (88.83%)
+    - equality_relation_missing: 75 (10.74%)
+    - wrong_entity: 2 (0.29%)
+    - ambiguous_multiple_entities: 1 (0.14%)
+
+Condition: hi_sft
+  Total: 700
+  Reasoning Correct: 294 (42.00%)
+  Reasoning Incorrect: 406 (58.00%)
+  Error Categories:
+    - wrong_entity: 158 (38.92%)
+    - no_recognizable_answer: 248 (61.08%)
+
+Condition: ne_pre
+  Total: 700
+  Reasoning Correct: 0 (0.00%)
+  Reasoning Incorrect: 700 (100.00%)
+  Error Categories:
+    - no_recognizable_answer: 627 (89.57%)
+    - equality_relation_missing: 73 (10.43%)
+
+Condition: ne_sft
+  Total: 700
+  Reasoning Correct: 100 (14.29%)
+  Reasoning Incorrect: 600 (85.71%)
+  Error Categories:
+    - no_recognizable_answer: 502 (83.67%)
+    - wrong_entity: 90 (15.00%)
+    - equality_relation_missing: 7 (1.17%)
+    - ambiguous_multiple_entities: 1 (0.17%)
+
+============================================================
+EXACT MATCH VS REASONING CORRECTNESS
+============================================================
+
+Condition: hi_sft
+  RC=True,  EM=True : 279
+  RC=True,  EM=False: 15 (Correct reasoning, but non-exact wording)
+  RC=False, EM=False: 406
+
+Condition: ne_sft
+  RC=True,  EM=True : 59
+  RC=True,  EM=False: 41 (Correct reasoning, but non-exact wording)
+  RC=False, EM=False: 587
+
+============================================================
+PRETRAINED VS SFT COMPARISON
+============================================================
+
+HI ERROR SHIFT (Pretrained -> SFT):
+  ambiguous_multiple_entities   :  0.14% ->  0.00%
+  equality_relation_missing     : 10.71% ->  0.00%
+  no_recognizable_answer        : 88.57% -> 35.43%
+  wrong_entity                  :  0.29% -> 22.57%
+
+NE ERROR SHIFT (Pretrained -> SFT):
+  ambiguous_multiple_entities   :  0.00% ->  0.14%
+  equality_relation_missing     : 10.43% ->  1.00%
+  no_recognizable_answer        : 89.57% -> 71.71%
+  wrong_entity                  :  0.00% -> 12.86%
+
+============================================================
+ERROR BREAKDOWN BY TASK FAMILY (SFT ONLY)
+============================================================
+
+Condition: hi_sft
+  direct_comparison:
+    Reas Incorrect: 56/100
+      - wrong_entity: 17
+      - no_recognizable_answer: 39
+  largest_smallest:
+    Reas Incorrect: 81/100
+      - wrong_entity: 45
+      - no_recognizable_answer: 36
+  general_comparison:
+    Reas Incorrect: 61/100
+      - no_recognizable_answer: 41
+      - wrong_entity: 20
+  two_hop_transitivity:
+    Reas Incorrect: 60/100
+      - no_recognizable_answer: 33
+      - wrong_entity: 27
+  three_hop_transitivity:
+    Reas Incorrect: 35/100
+      - no_recognizable_answer: 33
+      - wrong_entity: 2
+  reversed_relation:
+    Reas Incorrect: 54/100
+      - wrong_entity: 23
+      - no_recognizable_answer: 31
+  mixed_equality:
+    Reas Incorrect: 59/100
+      - wrong_entity: 24
+      - no_recognizable_answer: 35
+
+Condition: ne_sft
+  direct_comparison:
+    Reas Incorrect: 86/100
+      - no_recognizable_answer: 75
+      - wrong_entity: 8
+      - equality_relation_missing: 3
+  largest_smallest:
+    Reas Incorrect: 93/100
+      - no_recognizable_answer: 78
+      - wrong_entity: 15
+  general_comparison:
+    Reas Incorrect: 82/100
+      - wrong_entity: 10
+      - equality_relation_missing: 4
+      - no_recognizable_answer: 68
+  two_hop_transitivity:
+    Reas Incorrect: 91/100
+      - no_recognizable_answer: 76
+      - wrong_entity: 15
+  three_hop_transitivity:
+    Reas Incorrect: 78/100
+      - no_recognizable_answer: 65
+      - wrong_entity: 12
+      - ambiguous_multiple_entities: 1
+  reversed_relation:
+    Reas Incorrect: 83/100
+      - no_recognizable_answer: 64
+      - wrong_entity: 19
+  mixed_equality:
+    Reas Incorrect: 87/100
+      - no_recognizable_answer: 76
+      - wrong_entity: 11
+
+============================================================
+ERROR BREAKDOWN BY DIFFICULTY (SFT ONLY)
+============================================================
+
+Condition: hi_sft
+  easy:
+    Reas Incorrect: 129/210
+      - wrong_entity: 53
+      - no_recognizable_answer: 76
+  medium:
+    Reas Incorrect: 165/280
+      - no_recognizable_answer: 106
+      - wrong_entity: 59
+  hard:
+    Reas Incorrect: 112/210
+      - wrong_entity: 46
+      - no_recognizable_answer: 66
+
+Condition: ne_sft
+  easy:
+    Reas Incorrect: 175/210
+      - no_recognizable_answer: 148
+      - wrong_entity: 26
+      - equality_relation_missing: 1
+  medium:
+    Reas Incorrect: 248/280
+      - no_recognizable_answer: 208
+      - wrong_entity: 35
+      - equality_relation_missing: 5
+  hard:
+    Reas Incorrect: 177/210
+      - no_recognizable_answer: 146
+      - wrong_entity: 29
+      - equality_relation_missing: 1
+      - ambiguous_multiple_entities: 1

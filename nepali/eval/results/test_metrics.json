@@ -1,0 +1,11 @@
+{
+    "cross_entropy_loss": 2.526524235119404,
+    "perplexity": 12.509948842218312,
+    "bits_per_byte": 0.5206074477952354,
+    "tokens_per_word": 2.449458352754638,
+    "bytes_per_token": 7.001444178582313,
+    "total_predicted_tokens": 12859213,
+    "total_tokens": 12859213,
+    "total_words": 5249819,
+    "total_bytes": 90033062
+}

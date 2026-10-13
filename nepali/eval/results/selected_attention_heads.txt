@@ -1,0 +1,36 @@
+Layer 0
+-------
+Local Head:
+Head 5
+Mean Attention Distance: 11.8831
+Mean Attention Entropy: 2.8928
+
+Long-range Head:
+Head 0
+Mean Attention Distance: 20.6659
+Mean Attention Entropy: 4.4523
+
+Focused Head:
+Head 4
+Mean Attention Distance: 12.3562
+Mean Attention Entropy: 2.9577
+
+
+Layer 11
+--------
+Local Head:
+Head 2
+Mean Attention Distance: 9.9225
+Mean Attention Entropy: 2.7569
+
+Long-range Head:
+Head 3
+Mean Attention Distance: 32.6266
+Mean Attention Entropy: 2.9613
+
+Focused Head:
+Head 0
+Mean Attention Distance: 18.0600
+Mean Attention Entropy: 3.5108
+
+

@@ -1,0 +1,82 @@
+============================================================
+OVERALL METRICS
+============================================================
+Condition       Total    Reas Correct    Reas Acc        Exact Match     Exact Acc
+hi_pre          700      2               0.29% 0               0.00%
+hi_sft          700      294             42.00% 279             39.86%
+ne_pre          700      0               0.00% 0               0.00%
+ne_sft          700      100             14.29% 72              10.29%
+
+============================================================
+ABSOLUTE CHANGES (Pretrained -> SFT)
+============================================================
+HI:
+  Reasoning Accuracy Change: +41.71%
+  Exact Match Acc Change:    +39.86%
+NE:
+  Reasoning Accuracy Change: +14.29%
+  Exact Match Acc Change:    +10.29%
+
+============================================================
+PER TASK FAMILY
+============================================================
+
+Condition: hi_pre
+  direct_comparison         Total:100  Reas:  0.00% Exact:  0.00%
+  largest_smallest          Total:100  Reas:  0.00% Exact:  0.00%
+  general_comparison        Total:100  Reas:  0.00% Exact:  0.00%
+  two_hop_transitivity      Total:100  Reas:  0.00% Exact:  0.00%
+  three_hop_transitivity    Total:100  Reas:  0.00% Exact:  0.00%
+  reversed_relation         Total:100  Reas:  1.00% Exact:  0.00%
+  mixed_equality            Total:100  Reas:  1.00% Exact:  0.00%
+
+Condition: hi_sft
+  direct_comparison         Total:100  Reas: 44.00% Exact: 44.00%
+  largest_smallest          Total:100  Reas: 19.00% Exact: 12.00%
+  general_comparison        Total:100  Reas: 39.00% Exact: 39.00%
+  two_hop_transitivity      Total:100  Reas: 40.00% Exact: 38.00%
+  three_hop_transitivity    Total:100  Reas: 65.00% Exact: 62.00%
+  reversed_relation         Total:100  Reas: 46.00% Exact: 45.00%
+  mixed_equality            Total:100  Reas: 41.00% Exact: 39.00%
+
+Condition: ne_pre
+  direct_comparison         Total:100  Reas:  0.00% Exact:  0.00%
+  largest_smallest          Total:100  Reas:  0.00% Exact:  0.00%
+  general_comparison        Total:100  Reas:  0.00% Exact:  0.00%
+  two_hop_transitivity      Total:100  Reas:  0.00% Exact:  0.00%
+  three_hop_transitivity    Total:100  Reas:  0.00% Exact:  0.00%
+  reversed_relation         Total:100  Reas:  0.00% Exact:  0.00%
+  mixed_equality            Total:100  Reas:  0.00% Exact:  0.00%
+
+Condition: ne_sft
+  direct_comparison         Total:100  Reas: 14.00% Exact: 10.00%
+  largest_smallest          Total:100  Reas:  7.00% Exact:  1.00%
+  general_comparison        Total:100  Reas: 18.00% Exact: 13.00%
+  two_hop_transitivity      Total:100  Reas:  9.00% Exact:  7.00%
+  three_hop_transitivity    Total:100  Reas: 22.00% Exact: 18.00%
+  reversed_relation         Total:100  Reas: 17.00% Exact: 12.00%
+  mixed_equality            Total:100  Reas: 13.00% Exact: 11.00%
+
+============================================================
+PER DIFFICULTY
+============================================================
+
+Condition: hi_pre
+  easy       Total:210  Reas:  0.48% Exact:  0.00%
+  medium     Total:280  Reas:  0.00% Exact:  0.00%
+  hard       Total:210  Reas:  0.48% Exact:  0.00%
+
+Condition: hi_sft
+  easy       Total:210  Reas: 38.57% Exact: 35.71%
+  medium     Total:280  Reas: 41.07% Exact: 39.64%
+  hard       Total:210  Reas: 46.67% Exact: 44.29%
+
+Condition: ne_pre
+  easy       Total:210  Reas:  0.00% Exact:  0.00%
+  medium     Total:280  Reas:  0.00% Exact:  0.00%
+  hard       Total:210  Reas:  0.00% Exact:  0.00%
+
+Condition: ne_sft
+  easy       Total:210  Reas: 16.67% Exact: 12.86%
+  medium     Total:280  Reas: 11.43% Exact:  6.79%
+  hard       Total:210  Reas: 15.71% Exact: 12.38%

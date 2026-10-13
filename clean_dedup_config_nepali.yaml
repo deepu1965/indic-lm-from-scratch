@@ -1,0 +1,67 @@
+# config_nepali.yaml — LMA corpus cleaning config for Nepali.
+# Identical structure to config_hindi.yaml; only paths/thresholds differ.
+
+language: "nepali"
+
+paths:
+  corpus_root: "nepali/corpus"    # <language>/corpus/
+  manual_dir: "manual"            # nepali/corpus/manual/*.jsonl
+  public_dirs:                    # nepali/corpus/public/<sub>/*.jsonl
+    - "public/pdf"
+    - "public/web"
+  output_dir: "cleaned"           # nepali/corpus/cleaned/
+
+fields:
+  text_field: "text"              # JSONL field containing the document text
+
+unicode_normalization:
+  form: "NFC"
+
+character_filtering:
+  # Letters/marks are kept only if they belong to one of these scripts.
+  # Digits, punctuation, and symbols are language-agnostic and are handled
+  # separately by the preserve_* flags below (not by allowed_scripts), so
+  # currency, math operators, %, @, #, quotes, brackets, slashes, and
+  # URL/email punctuation are preserved regardless of script.
+  allowed_scripts:
+    - devanagari
+    - latin
+  preserve_digits: true          # ASCII + Devanagari digits
+  preserve_punctuation: true     # quotes, brackets, hyphens/dashes, slashes, @, #, ...
+  preserve_symbols: true         # currency (₹), math operators, %, ...
+  # Extra characters to force-keep/remove beyond the rules above.
+  extra_keep_chars: ""
+  extra_remove_chars: ""
+
+thresholds:
+  length_filtering:               # manual data only
+    min_chars: 40
+    min_words: 8
+
+  line_structure_filtering:       # manual data only
+    short_line_max_chars: 25
+    max_short_line_ratio: 0.70
+    max_consecutive_short_lines: 12
+
+  repetition_filtering:           # manual data only
+    max_repeated_word_ratio: 0.6
+    max_repeated_trigram_ratio: 0.5
+    max_repeated_paragraph_ratio: 0.4
+
+  latin_ratio_filtering:          # applied to ALL data (public + manual)
+    enabled: true                 # set false to disable entirely
+    max_latin_ratio: 0.80
+
+output:
+  overwrite_existing: false
+  id_hash_length: null
+
+deduplication:
+  cleaned_dir: "cleaned"
+  input_file: "final_cleaned.jsonl"
+  output_dir: "deduplicated"
+  shingle_size: 3
+  minhash_size: 100
+  bands: 20
+  rows_per_band: 5
+  near_duplicate_threshold: 0.90

@@ -1,0 +1,77 @@
+# config_hindi.yaml — LMA corpus cleaning config for Hindi.
+# Switch languages by pointing corpus_root elsewhere (e.g. config_nepali.yaml) —
+# no code changes required.
+
+language: "hindi"
+
+paths:
+  corpus_root: "hindi/corpus"     # <language>/corpus/
+  manual_dir: "manual"            # hindi/corpus/manual/*.jsonl
+  public_dirs:                    # hindi/corpus/public/<sub>/*.jsonl
+    - "public/pdf"
+    - "public/speech"
+    - "public/web"
+  output_dir: "cleaned"           # hindi/corpus/cleaned/
+
+fields:
+  text_field: "text"              # JSONL field containing the document text
+
+unicode_normalization:
+  form: "NFC"
+
+character_filtering:
+  # Letters/marks are kept only if they belong to one of these scripts.
+  # Digits, punctuation, and symbols are language-agnostic and are handled
+  # separately by the preserve_* flags below (not by allowed_scripts), so
+  # currency, math operators, %, @, #, quotes, brackets, slashes, and
+  # URL/email punctuation are preserved regardless of script.
+  allowed_scripts:
+    - devanagari
+    - latin
+  preserve_digits: true          # ASCII + Devanagari digits
+  preserve_punctuation: true     # quotes, brackets, hyphens/dashes, slashes, @, #, ...
+  preserve_symbols: true         # currency (₹), math operators, %, ...
+  # Extra characters to force-keep/remove beyond the rules above.
+  extra_keep_chars: ""
+  extra_remove_chars: ""
+
+thresholds:
+  length_filtering:               # manual data only
+    min_chars: 45
+    min_words: 9
+
+  line_structure_filtering:       # manual data only
+    short_line_max_chars: 25      # a line with <= this many stripped chars is "short"
+    max_short_line_ratio: 0.70     # reject if more than 50% of lines are short
+    max_consecutive_short_lines: 10
+
+  repetition_filtering:           # manual data only
+    max_repeated_word_ratio: 0.75
+    max_repeated_trigram_ratio: 0.70
+    max_repeated_paragraph_ratio: 0.60  # set to null to disable this check
+
+  latin_ratio_filtering:          # applied to ALL data (public + manual)
+    enabled: true                 # set false to disable entirely
+    max_latin_ratio: 0.85         # drop a sentence if > 85% of its letters
+                                  # are Latin/English (0.0=drop all Latin,
+                                  # 1.0=keep everything, 0.85 is a safe default
+                                  # that allows short terms like AI/NASA/COVID)
+
+output:
+  overwrite_existing: false       # set true to allow re-cleaning to overwrite output files
+  id_hash_length: null            # null = full sha256 hex digest; e.g. 16 to truncate
+
+deduplication:
+  # Input: the single concatenated cleaned file produced by the cleaning stage
+  cleaned_dir: "cleaned"
+  input_file: "final_cleaned.jsonl"
+  # Output: goes into <corpus_root>/deduplicated/
+  output_dir: "deduplicated"
+
+  # Near-duplicate detection (MinHash + LSH)
+  # IMPORTANT: bands * rows_per_band must equal minhash_size
+  shingle_size: 3                 # n-gram word shingle width
+  minhash_size: 100               # k — number of MinHash values per doc
+  bands: 20                       # b — number of LSH bands  (20 * 5 = 100)
+  rows_per_band: 5                # r — rows per band
+  near_duplicate_threshold: 0.80  # Jaccard similarity threshold for near-dups

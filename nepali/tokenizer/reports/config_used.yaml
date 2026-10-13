@@ -1,0 +1,62 @@
+# tokenizer_config_nepali.yaml
+# Configuration for Nepali BPE tokenizer training (from scratch).
+# Run: python3 nepali/tokenizer/tokenizer.py --config nepali/tokenizer/tokenizer_config_nepali.yaml
+
+language: "nepali"
+
+# ── Input corpus (splits) ────────────────────────────────────────────────────
+train_file: "nepali/corpus/splits/train.jsonl"
+val_file:   "nepali/corpus/splits/val.jsonl"
+test_file:  "nepali/corpus/splits/test.jsonl"
+
+# ── Output directories ────────────────────────────────────────────────────────
+output_dir:  "nepali/tokenizer"
+models_dir:  "nepali/tokenizer/models"
+reports_dir: "nepali/tokenizer/reports"
+
+# ── Vocabulary candidates for comparison ─────────────────────────────────────
+vocab_sizes:
+  - 5000
+  - 7500
+  - 10000
+
+# ── BPE model settings ────────────────────────────────────────────────────────
+model_type: "bpe"
+
+# Special tokens added to every vocabulary.
+special_tokens:
+  - "[UNK]"
+  - "[PAD]"
+  - "[BOS]"
+  - "[EOS]"
+  - "<SPACE>"
+  - "<NEWLINE>"
+  - "<TAB>"
+
+# ── Memory / streaming settings ──────────────────────────────────────────────
+# Maximum characters per chunk fed to the BPE trainer.
+# Documents longer than this are split into consecutive chunks so that no
+# single Python string is excessively large.  All content is preserved.
+max_chunk_chars: 50000
+
+# Optional cap on total characters streamed from train.jsonl.
+# null = use the full training file.
+training_max_chars: null
+
+# Optional cap on characters read from val.jsonl during evaluation.
+# null = use the whole validation split.
+validation_max_chars: null
+
+# ── Reproducibility ──────────────────────────────────────────────────────────
+# BpeTrainer does not expose a random seed parameter.
+# BPE merge selection is deterministic on identical ordered input.
+# random_seed is intentionally absent.
+
+# ── Tokenization examples ────────────────────────────────────────────────────
+example_sentences:
+  - "नमस्ते, तपाईंलाई कस्तो छ?"
+  - "नेपाली भाषा नेपालको राष्ट्रभाषा हो।"
+  - "आज मौसम राम्रो छ।"
+  - "सरकारले नयाँ शिक्षा नीति लागू गर्‍यो।"
+  - "प्रविधिको क्षेत्रमा नेपाल तीव्र गतिमा अगाडि बढिरहेको छ।"
+  - "महाभारत र रामायण महान ग्रन्थ हुन्।"

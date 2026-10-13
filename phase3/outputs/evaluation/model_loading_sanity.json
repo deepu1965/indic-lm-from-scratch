@@ -1,0 +1,110 @@
+[
+    {
+        "condition": "HI Pretrained",
+        "device": "cuda",
+        "config_vocab_size": 10000,
+        "tokenizer_vocab_size": 10000,
+        "vocab_match": true,
+        "lora_present": false,
+        "total_parameters": 25144336,
+        "trainable_parameters": 25144336,
+        "trainable_parameters_eval": 0,
+        "generation_examples": [
+            {
+                "id": "000040",
+                "input_text": "करण की ऊँचाई कुणाल से कम है। बताइए, करण और कुणाल में किसकी ऊँचाई अधिक है?",
+                "expected_target": "कुणाल की ऊँचाई अधिक है।",
+                "generated_text": "नई दिल्ली । देश में कोरोना वायरस के बढ़ते मामलों"
+            },
+            {
+                "id": "000041",
+                "input_text": "दी गई जानकारी के अनुसार, करण की मात्रा सिमरन से अधिक है। इनमें से किसकी मात्रा कम है: करण या सिमरन?",
+                "expected_target": "सिमरन की मात्रा कम है。",
+                "generated_text": "नई दिल्ली । देश में कोरोना वायरस के बढ़ते मामलों"
+            }
+        ],
+        "parameter_immutability_verified": true,
+        "generation_success": true
+    },
+    {
+        "condition": "HI SFT",
+        "device": "cuda",
+        "config_vocab_size": 10000,
+        "tokenizer_vocab_size": 10000,
+        "vocab_match": true,
+        "lora_present": true,
+        "total_parameters": 25439248,
+        "trainable_parameters": 294912,
+        "trainable_parameters_eval": 0,
+        "generation_examples": [
+            {
+                "id": "000040",
+                "input_text": "करण की ऊँचाई कुणाल से कम है। बताइए, करण और कुणाल में किसकी ऊँचाई अधिक है?",
+                "expected_target": "कुणाल की ऊँचाई अधिक है।",
+                "generated_text": "करण की ऊँ चाई अधिक है ।"
+            },
+            {
+                "id": "000041",
+                "input_text": "दी गई जानकारी के अनुसार, करण की मात्रा सिमरन से अधिक है। इनमें से किसकी मात्रा कम है: करण या सिमरन?",
+                "expected_target": "सिमरन की मात्रा कम है。",
+                "generated_text": "करण की मात्रा कम है 。"
+            }
+        ],
+        "parameter_immutability_verified": true,
+        "generation_success": true
+    },
+    {
+        "condition": "NE Pretrained",
+        "device": "cuda",
+        "config_vocab_size": 10000,
+        "tokenizer_vocab_size": 10000,
+        "vocab_match": true,
+        "lora_present": false,
+        "total_parameters": 25144336,
+        "trainable_parameters": 25144336,
+        "trainable_parameters_eval": 0,
+        "generation_examples": [
+            {
+                "id": "000040",
+                "input_text": "विवेकको उचाइ सरस्वती भन्दा कम छ। बताउनुहोस्, विवेक र सरस्वती मध्ये कसको उचाइ बढी छ?",
+                "expected_target": "सरस्वतीको उचाइ बढी छ।",
+                "generated_text": "काठमाडौं । नेपाल कम्युनिष्ट पार्टी ( नेकपा ) का अध्यक्ष पुष्पकमल"
+            },
+            {
+                "id": "000041",
+                "input_text": "दिइएको जानकारी अनुसार, सन्तोषको मात्रा विवेक भन्दा बढी छ। यी मध्ये कसको मात्रा कम छ: सन्तोष वा विवेक?",
+                "expected_target": "विवेकको मात्रा कम छ।",
+                "generated_text": "काठमाडौं । नेपाल राष्ट्र बैंकले चालु आर्थिक वर्षको पहिलो त्रैमा"
+            }
+        ],
+        "parameter_immutability_verified": true,
+        "generation_success": true
+    },
+    {
+        "condition": "NE SFT",
+        "device": "cuda",
+        "config_vocab_size": 10000,
+        "tokenizer_vocab_size": 10000,
+        "vocab_match": true,
+        "lora_present": true,
+        "total_parameters": 25439248,
+        "trainable_parameters": 294912,
+        "trainable_parameters_eval": 0,
+        "generation_examples": [
+            {
+                "id": "000040",
+                "input_text": "विवेकको उचाइ सरस्वती भन्दा कम छ। बताउनुहोस्, विवेक र सरस्वती मध्ये कसको उचाइ बढी छ?",
+                "expected_target": "सरस्वतीको उचाइ बढी छ।",
+                "generated_text": "सरस्वती को उचाइ बढी छ ।"
+            },
+            {
+                "id": "000041",
+                "input_text": "दिइएको जानकारी अनुसार, सन्तोषको मात्रा विवेक भन्दा बढी छ। यी मध्ये कसको मात्रा कम छ: सन्तोष वा विवेक?",
+                "expected_target": "विवेकको मात्रा कम छ।",
+                "generated_text": "निश् च लको मात्रा कम छ ।"
+            }
+        ],
+        "parameter_immutability_verified": true,
+        "generation_success": true
+    }
+]

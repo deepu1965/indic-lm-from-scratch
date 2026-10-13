@@ -1,0 +1,5 @@
+language,split,generation_method,temperature,seed,prefix_len,max_new_tokens,num_examples,bleu,chrf,rouge_l,repetition_rate,distinct_1,distinct_2
+hindi,test,greedy,N/A,42,64,64,500,2.0919,13.4348,0.1121,0.6114,0.0701,0.2031
+hindi,test,temperature,0.5,42,64,64,500,2.0552,15.6424,0.1173,0.2071,0.1181,0.4261
+hindi,test,temperature,1.0,42,64,64,500,0.9423,15.6740,0.0872,0.0110,0.2257,0.8038
+hindi,test,temperature,1.5,42,64,64,500,0.0733,15.2115,0.0364,0.0000,0.2555,0.9660

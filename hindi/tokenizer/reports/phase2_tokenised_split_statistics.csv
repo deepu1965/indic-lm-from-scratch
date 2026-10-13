@@ -1,0 +1,13 @@
+language,tokenizer_path,vocab_size,split,source_category,documents,tokens,avg_tokens_per_doc,unique_token_ids,coverage_pct,zero_frequency_tokens
+hindi,hindi/tokenizer/models/bpe_v10000.json,10000,train,manual,257718,223568476,867.49,9994,99.94,6
+hindi,hindi/tokenizer/models/bpe_v10000.json,10000,train,public,1195661,1192623443,997.46,9994,99.94,6
+hindi,hindi/tokenizer/models/bpe_v10000.json,10000,train,other,0,0,0,9994,99.94,6
+hindi,hindi/tokenizer/models/bpe_v10000.json,10000,train,TOTAL,1453379,1416191919,974.41,9994,99.94,6
+hindi,hindi/tokenizer/models/bpe_v10000.json,10000,val,manual,2634,2252519,855.17,9134,91.34,866
+hindi,hindi/tokenizer/models/bpe_v10000.json,10000,val,public,11961,11924025,996.91,9134,91.34,866
+hindi,hindi/tokenizer/models/bpe_v10000.json,10000,val,other,0,0,0,9134,91.34,866
+hindi,hindi/tokenizer/models/bpe_v10000.json,10000,val,TOTAL,14595,14176544,971.33,9134,91.34,866
+hindi,hindi/tokenizer/models/bpe_v10000.json,10000,test,manual,2766,2517696,910.23,9143,91.43,857
+hindi,hindi/tokenizer/models/bpe_v10000.json,10000,test,public,11999,11879696,990.06,9143,91.43,857
+hindi,hindi/tokenizer/models/bpe_v10000.json,10000,test,other,0,0,0,9143,91.43,857
+hindi,hindi/tokenizer/models/bpe_v10000.json,10000,test,TOTAL,14765,14397392,975.1,9143,91.43,857

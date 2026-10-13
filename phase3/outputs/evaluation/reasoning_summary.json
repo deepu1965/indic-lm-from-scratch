@@ -1,0 +1,346 @@
+{
+  "metrics": {
+    "hi_pre": {
+      "overall": {
+        "total": 700,
+        "reasoning_correct": 2,
+        "exact_match": 0,
+        "reasoning_accuracy": 0.002857142857142857,
+        "exact_match_accuracy": 0.0
+      },
+      "per_family": {
+        "direct_comparison": {
+          "total": 100,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        },
+        "largest_smallest": {
+          "total": 100,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        },
+        "general_comparison": {
+          "total": 100,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        },
+        "two_hop_transitivity": {
+          "total": 100,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        },
+        "three_hop_transitivity": {
+          "total": 100,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        },
+        "reversed_relation": {
+          "total": 100,
+          "reasoning_correct": 1,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.01,
+          "exact_match_accuracy": 0.0
+        },
+        "mixed_equality": {
+          "total": 100,
+          "reasoning_correct": 1,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.01,
+          "exact_match_accuracy": 0.0
+        }
+      },
+      "per_difficulty": {
+        "easy": {
+          "total": 210,
+          "reasoning_correct": 1,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.004761904761904762,
+          "exact_match_accuracy": 0.0
+        },
+        "medium": {
+          "total": 280,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        },
+        "hard": {
+          "total": 210,
+          "reasoning_correct": 1,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.004761904761904762,
+          "exact_match_accuracy": 0.0
+        }
+      }
+    },
+    "hi_sft": {
+      "overall": {
+        "total": 700,
+        "reasoning_correct": 294,
+        "exact_match": 279,
+        "reasoning_accuracy": 0.42,
+        "exact_match_accuracy": 0.3985714285714286
+      },
+      "per_family": {
+        "direct_comparison": {
+          "total": 100,
+          "reasoning_correct": 44,
+          "exact_match": 44,
+          "reasoning_accuracy": 0.44,
+          "exact_match_accuracy": 0.44
+        },
+        "largest_smallest": {
+          "total": 100,
+          "reasoning_correct": 19,
+          "exact_match": 12,
+          "reasoning_accuracy": 0.19,
+          "exact_match_accuracy": 0.12
+        },
+        "general_comparison": {
+          "total": 100,
+          "reasoning_correct": 39,
+          "exact_match": 39,
+          "reasoning_accuracy": 0.39,
+          "exact_match_accuracy": 0.39
+        },
+        "two_hop_transitivity": {
+          "total": 100,
+          "reasoning_correct": 40,
+          "exact_match": 38,
+          "reasoning_accuracy": 0.4,
+          "exact_match_accuracy": 0.38
+        },
+        "three_hop_transitivity": {
+          "total": 100,
+          "reasoning_correct": 65,
+          "exact_match": 62,
+          "reasoning_accuracy": 0.65,
+          "exact_match_accuracy": 0.62
+        },
+        "reversed_relation": {
+          "total": 100,
+          "reasoning_correct": 46,
+          "exact_match": 45,
+          "reasoning_accuracy": 0.46,
+          "exact_match_accuracy": 0.45
+        },
+        "mixed_equality": {
+          "total": 100,
+          "reasoning_correct": 41,
+          "exact_match": 39,
+          "reasoning_accuracy": 0.41,
+          "exact_match_accuracy": 0.39
+        }
+      },
+      "per_difficulty": {
+        "easy": {
+          "total": 210,
+          "reasoning_correct": 81,
+          "exact_match": 75,
+          "reasoning_accuracy": 0.38571428571428573,
+          "exact_match_accuracy": 0.35714285714285715
+        },
+        "medium": {
+          "total": 280,
+          "reasoning_correct": 115,
+          "exact_match": 111,
+          "reasoning_accuracy": 0.4107142857142857,
+          "exact_match_accuracy": 0.3964285714285714
+        },
+        "hard": {
+          "total": 210,
+          "reasoning_correct": 98,
+          "exact_match": 93,
+          "reasoning_accuracy": 0.4666666666666667,
+          "exact_match_accuracy": 0.44285714285714284
+        }
+      }
+    },
+    "ne_pre": {
+      "overall": {
+        "total": 700,
+        "reasoning_correct": 0,
+        "exact_match": 0,
+        "reasoning_accuracy": 0.0,
+        "exact_match_accuracy": 0.0
+      },
+      "per_family": {
+        "direct_comparison": {
+          "total": 100,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        },
+        "largest_smallest": {
+          "total": 100,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        },
+        "general_comparison": {
+          "total": 100,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        },
+        "two_hop_transitivity": {
+          "total": 100,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        },
+        "three_hop_transitivity": {
+          "total": 100,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        },
+        "reversed_relation": {
+          "total": 100,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        },
+        "mixed_equality": {
+          "total": 100,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        }
+      },
+      "per_difficulty": {
+        "easy": {
+          "total": 210,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        },
+        "medium": {
+          "total": 280,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        },
+        "hard": {
+          "total": 210,
+          "reasoning_correct": 0,
+          "exact_match": 0,
+          "reasoning_accuracy": 0.0,
+          "exact_match_accuracy": 0.0
+        }
+      }
+    },
+    "ne_sft": {
+      "overall": {
+        "total": 700,
+        "reasoning_correct": 100,
+        "exact_match": 72,
+        "reasoning_accuracy": 0.14285714285714285,
+        "exact_match_accuracy": 0.10285714285714286
+      },
+      "per_family": {
+        "direct_comparison": {
+          "total": 100,
+          "reasoning_correct": 14,
+          "exact_match": 10,
+          "reasoning_accuracy": 0.14,
+          "exact_match_accuracy": 0.1
+        },
+        "largest_smallest": {
+          "total": 100,
+          "reasoning_correct": 7,
+          "exact_match": 1,
+          "reasoning_accuracy": 0.07,
+          "exact_match_accuracy": 0.01
+        },
+        "general_comparison": {
+          "total": 100,
+          "reasoning_correct": 18,
+          "exact_match": 13,
+          "reasoning_accuracy": 0.18,
+          "exact_match_accuracy": 0.13
+        },
+        "two_hop_transitivity": {
+          "total": 100,
+          "reasoning_correct": 9,
+          "exact_match": 7,
+          "reasoning_accuracy": 0.09,
+          "exact_match_accuracy": 0.07
+        },
+        "three_hop_transitivity": {
+          "total": 100,
+          "reasoning_correct": 22,
+          "exact_match": 18,
+          "reasoning_accuracy": 0.22,
+          "exact_match_accuracy": 0.18
+        },
+        "reversed_relation": {
+          "total": 100,
+          "reasoning_correct": 17,
+          "exact_match": 12,
+          "reasoning_accuracy": 0.17,
+          "exact_match_accuracy": 0.12
+        },
+        "mixed_equality": {
+          "total": 100,
+          "reasoning_correct": 13,
+          "exact_match": 11,
+          "reasoning_accuracy": 0.13,
+          "exact_match_accuracy": 0.11
+        }
+      },
+      "per_difficulty": {
+        "easy": {
+          "total": 210,
+          "reasoning_correct": 35,
+          "exact_match": 27,
+          "reasoning_accuracy": 0.16666666666666666,
+          "exact_match_accuracy": 0.12857142857142856
+        },
+        "medium": {
+          "total": 280,
+          "reasoning_correct": 32,
+          "exact_match": 19,
+          "reasoning_accuracy": 0.11428571428571428,
+          "exact_match_accuracy": 0.06785714285714285
+        },
+        "hard": {
+          "total": 210,
+          "reasoning_correct": 33,
+          "exact_match": 26,
+          "reasoning_accuracy": 0.15714285714285714,
+          "exact_match_accuracy": 0.12380952380952381
+        }
+      }
+    }
+  },
+  "changes": {
+    "hi": {
+      "reasoning_accuracy_change": 0.41714285714285715,
+      "exact_match_accuracy_change": 0.3985714285714286
+    },
+    "ne": {
+      "reasoning_accuracy_change": 0.14285714285714285,
+      "exact_match_accuracy_change": 0.10285714285714286
+    }
+  }
+}

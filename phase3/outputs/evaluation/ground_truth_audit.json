@@ -1,0 +1,422 @@
+{
+    "summary": {
+        "total_records": 1400,
+        "independent_eq_gt": 942,
+        "independent_neq_gt": 308,
+        "independent_eq_target": 1250,
+        "independent_neq_target": 0,
+        "gt_eq_target": 942,
+        "gt_neq_target": 308,
+        "equality_records": 150,
+        "by_language": {
+            "hi": {
+                "total": 700,
+                "indep_neq_gt": 145
+            },
+            "ne": {
+                "total": 700,
+                "indep_neq_gt": 163
+            }
+        },
+        "by_task_family": {
+            "direct_comparison": {
+                "total": 200,
+                "indep_neq_gt": 34
+            },
+            "largest_smallest": {
+                "total": 200,
+                "indep_neq_gt": 0
+            },
+            "general_comparison": {
+                "total": 200,
+                "indep_neq_gt": 0
+            },
+            "two_hop_transitivity": {
+                "total": 200,
+                "indep_neq_gt": 108
+            },
+            "three_hop_transitivity": {
+                "total": 200,
+                "indep_neq_gt": 60
+            },
+            "reversed_relation": {
+                "total": 200,
+                "indep_neq_gt": 51
+            },
+            "mixed_equality": {
+                "total": 200,
+                "indep_neq_gt": 55
+            }
+        },
+        "by_difficulty": {
+            "easy": {
+                "total": 420,
+                "indep_neq_gt": 59
+            },
+            "medium": {
+                "total": 560,
+                "indep_neq_gt": 134
+            },
+            "hard": {
+                "total": 420,
+                "indep_neq_gt": 115
+            }
+        },
+        "by_representation": {
+            "relational": {
+                "total": 1048,
+                "indep_neq_gt": 233
+            },
+            "numerical": {
+                "total": 352,
+                "indep_neq_gt": 75
+            }
+        },
+        "by_question_direction": {
+            "greater": {
+                "total": 724,
+                "indep_neq_gt": 0
+            },
+            "less": {
+                "total": 330,
+                "indep_neq_gt": 308
+            },
+            "general": {
+                "total": 346,
+                "indep_neq_gt": 0
+            }
+        }
+    },
+    "representative_discrepancies": [
+        {
+            "id": "000041",
+            "language": "hi",
+            "task_family": "direct_comparison",
+            "difficulty": "easy",
+            "representation": "relational",
+            "facts": [
+                {
+                    "subject": "E01",
+                    "relation": "greater_than",
+                    "object": "E02"
+                }
+            ],
+            "question": {
+                "type": "compare",
+                "entities": [
+                    "E01",
+                    "E02"
+                ]
+            },
+            "ground_truth": {
+                "relation": "greater_than",
+                "answer_entity": "E01"
+            },
+            "entity_mapping": {
+                "E01": "करण",
+                "E02": "सिमरन"
+            },
+            "target_text": "सिमरन की मात्रा कम है。",
+            "independently_derived_answer": "E02",
+            "template_id": "HI_DC_03",
+            "target_answer_derived": "E02"
+        },
+        {
+            "id": "000093",
+            "language": "hi",
+            "task_family": "direct_comparison",
+            "difficulty": "medium",
+            "representation": "relational",
+            "facts": [
+                {
+                    "subject": "E01",
+                    "relation": "greater_than",
+                    "object": "E02"
+                }
+            ],
+            "question": {
+                "type": "compare",
+                "entities": [
+                    "E02",
+                    "E01"
+                ]
+            },
+            "ground_truth": {
+                "relation": "less_than",
+                "answer_entity": "E01"
+            },
+            "entity_mapping": {
+                "E01": "वरुण",
+                "E02": "कुणाल"
+            },
+            "target_text": "कुणाल की उम्र कम है。",
+            "independently_derived_answer": "E02",
+            "template_id": "HI_DC_03",
+            "target_answer_derived": "E02"
+        },
+        {
+            "id": "000174",
+            "language": "hi",
+            "task_family": "direct_comparison",
+            "difficulty": "easy",
+            "representation": "numerical",
+            "facts": [
+                {
+                    "subject": "E01",
+                    "relation": "less_than",
+                    "object": "E02"
+                }
+            ],
+            "question": {
+                "type": "compare",
+                "entities": [
+                    "E01",
+                    "E02"
+                ]
+            },
+            "ground_truth": {
+                "relation": "less_than",
+                "answer_entity": "E02"
+            },
+            "entity_mapping": {
+                "E01": "पंकज",
+                "E02": "सिमरन"
+            },
+            "target_text": "पंकज की मात्रा कम है。",
+            "independently_derived_answer": "E01",
+            "template_id": "HI_DC_03",
+            "target_answer_derived": "E01"
+        },
+        {
+            "id": "000195",
+            "language": "hi",
+            "task_family": "direct_comparison",
+            "difficulty": "easy",
+            "representation": "relational",
+            "facts": [
+                {
+                    "subject": "E01",
+                    "relation": "greater_than",
+                    "object": "E02"
+                }
+            ],
+            "question": {
+                "type": "compare",
+                "entities": [
+                    "E01",
+                    "E02"
+                ]
+            },
+            "ground_truth": {
+                "relation": "greater_than",
+                "answer_entity": "E01"
+            },
+            "entity_mapping": {
+                "E01": "करण",
+                "E02": "मुस्कान"
+            },
+            "target_text": "मुस्कान की कीमत कम है。",
+            "independently_derived_answer": "E02",
+            "template_id": "HI_DC_03",
+            "target_answer_derived": "E02"
+        },
+        {
+            "id": "000327",
+            "language": "hi",
+            "task_family": "direct_comparison",
+            "difficulty": "easy",
+            "representation": "relational",
+            "facts": [
+                {
+                    "subject": "E01",
+                    "relation": "less_than",
+                    "object": "E02"
+                }
+            ],
+            "question": {
+                "type": "compare",
+                "entities": [
+                    "E01",
+                    "E02"
+                ]
+            },
+            "ground_truth": {
+                "relation": "less_than",
+                "answer_entity": "E02"
+            },
+            "entity_mapping": {
+                "E01": "मुस्कान",
+                "E02": "प्रवीण"
+            },
+            "target_text": "मुस्कान की ऊँचाई कम है。",
+            "independently_derived_answer": "E01",
+            "template_id": "HI_DC_03",
+            "target_answer_derived": "E01"
+        },
+        {
+            "id": "000344",
+            "language": "hi",
+            "task_family": "direct_comparison",
+            "difficulty": "easy",
+            "representation": "relational",
+            "facts": [
+                {
+                    "subject": "E01",
+                    "relation": "greater_than",
+                    "object": "E02"
+                }
+            ],
+            "question": {
+                "type": "compare",
+                "entities": [
+                    "E01",
+                    "E02"
+                ]
+            },
+            "ground_truth": {
+                "relation": "greater_than",
+                "answer_entity": "E01"
+            },
+            "entity_mapping": {
+                "E01": "सिमरन",
+                "E02": "रिया"
+            },
+            "target_text": "रिया की ऊँचाई कम है。",
+            "independently_derived_answer": "E02",
+            "template_id": "HI_DC_03",
+            "target_answer_derived": "E02"
+        },
+        {
+            "id": "000400",
+            "language": "hi",
+            "task_family": "direct_comparison",
+            "difficulty": "easy",
+            "representation": "relational",
+            "facts": [
+                {
+                    "subject": "E01",
+                    "relation": "less_than",
+                    "object": "E02"
+                }
+            ],
+            "question": {
+                "type": "compare",
+                "entities": [
+                    "E01",
+                    "E02"
+                ]
+            },
+            "ground_truth": {
+                "relation": "less_than",
+                "answer_entity": "E02"
+            },
+            "entity_mapping": {
+                "E01": "करण",
+                "E02": "रिया"
+            },
+            "target_text": "करण की मात्रा कम है。",
+            "independently_derived_answer": "E01",
+            "template_id": "HI_DC_03",
+            "target_answer_derived": "E01"
+        },
+        {
+            "id": "000521",
+            "language": "hi",
+            "task_family": "direct_comparison",
+            "difficulty": "medium",
+            "representation": "relational",
+            "facts": [
+                {
+                    "subject": "E01",
+                    "relation": "less_than",
+                    "object": "E02"
+                }
+            ],
+            "question": {
+                "type": "compare",
+                "entities": [
+                    "E02",
+                    "E01"
+                ]
+            },
+            "ground_truth": {
+                "relation": "greater_than",
+                "answer_entity": "E02"
+            },
+            "entity_mapping": {
+                "E01": "पंकज",
+                "E02": "प्रवीण"
+            },
+            "target_text": "पंकज की मात्रा कम है。",
+            "independently_derived_answer": "E01",
+            "template_id": "HI_DC_03",
+            "target_answer_derived": "E01"
+        },
+        {
+            "id": "000524",
+            "language": "hi",
+            "task_family": "direct_comparison",
+            "difficulty": "easy",
+            "representation": "relational",
+            "facts": [
+                {
+                    "subject": "E01",
+                    "relation": "less_than",
+                    "object": "E02"
+                }
+            ],
+            "question": {
+                "type": "compare",
+                "entities": [
+                    "E01",
+                    "E02"
+                ]
+            },
+            "ground_truth": {
+                "relation": "less_than",
+                "answer_entity": "E02"
+            },
+            "entity_mapping": {
+                "E01": "प्रवीण",
+                "E02": "मीनाक्षी"
+            },
+            "target_text": "प्रवीण की कीमत कम है。",
+            "independently_derived_answer": "E01",
+            "template_id": "HI_DC_03",
+            "target_answer_derived": "E01"
+        },
+        {
+            "id": "000539",
+            "language": "hi",
+            "task_family": "direct_comparison",
+            "difficulty": "easy",
+            "representation": "relational",
+            "facts": [
+                {
+                    "subject": "E01",
+                    "relation": "greater_than",
+                    "object": "E02"
+                }
+            ],
+            "question": {
+                "type": "compare",
+                "entities": [
+                    "E01",
+                    "E02"
+                ]
+            },
+            "ground_truth": {
+                "relation": "greater_than",
+                "answer_entity": "E01"
+            },
+            "entity_mapping": {
+                "E01": "करण",
+                "E02": "कुणाल"
+            },
+            "target_text": "कुणाल की कीमत कम है。",
+            "independently_derived_answer": "E02",
+            "template_id": "HI_DC_03",
+            "target_answer_derived": "E02"
+        }
+    ]
+}

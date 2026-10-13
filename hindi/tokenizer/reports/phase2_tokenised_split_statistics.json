@@ -1,0 +1,126 @@
+{
+  "phase": "Phase 2 -- Corpus Tokenisation",
+  "generated_at": "2026-09-04T05:43:49.695504+00:00",
+  "language": "hindi",
+  "tokenizer_path": "hindi/tokenizer/models/bpe_v10000.json",
+  "vocab_size": 10000,
+  "splits": [
+    {
+      "split": "train",
+      "input_file": "hindi/corpus/splits/train.jsonl",
+      "output_file": "hindi/corpus/tokenised_splits/train.jsonl",
+      "documents_ok": 1453379,
+      "documents_skipped": 0,
+      "documents_empty_text": 0,
+      "documents_malformed": 0,
+      "total_tokens": 1416191919,
+      "avg_tokens_per_doc": 974.41,
+      "by_source_category": {
+        "manual": {
+          "documents": 257718,
+          "tokens": 223568476,
+          "avg_tokens_per_doc": 867.49
+        },
+        "public": {
+          "documents": 1195661,
+          "tokens": 1192623443,
+          "avg_tokens_per_doc": 997.46
+        },
+        "other": {
+          "documents": 0,
+          "tokens": 0,
+          "avg_tokens_per_doc": 0
+        }
+      },
+      "unknown_source_values": {},
+      "vocab_usage": {
+        "vocab_size": 10000,
+        "total_token_occurrences": 1416191919,
+        "unique_token_ids_observed": 9994,
+        "coverage_pct": 99.94,
+        "zero_frequency_tokens": 6,
+        "tokens_occurring_exactly_1": 268,
+        "tokens_occurring_lt_10": 628,
+        "tokens_occurring_lt_100": 868
+      }
+    },
+    {
+      "split": "val",
+      "input_file": "hindi/corpus/splits/val.jsonl",
+      "output_file": "hindi/corpus/tokenised_splits/val.jsonl",
+      "documents_ok": 14595,
+      "documents_skipped": 0,
+      "documents_empty_text": 0,
+      "documents_malformed": 0,
+      "total_tokens": 14176544,
+      "avg_tokens_per_doc": 971.33,
+      "by_source_category": {
+        "manual": {
+          "documents": 2634,
+          "tokens": 2252519,
+          "avg_tokens_per_doc": 855.17
+        },
+        "public": {
+          "documents": 11961,
+          "tokens": 11924025,
+          "avg_tokens_per_doc": 996.91
+        },
+        "other": {
+          "documents": 0,
+          "tokens": 0,
+          "avg_tokens_per_doc": 0
+        }
+      },
+      "unknown_source_values": {},
+      "vocab_usage": {
+        "vocab_size": 10000,
+        "total_token_occurrences": 14176544,
+        "unique_token_ids_observed": 9134,
+        "coverage_pct": 91.34,
+        "zero_frequency_tokens": 866,
+        "tokens_occurring_exactly_1": 63,
+        "tokens_occurring_lt_10": 249,
+        "tokens_occurring_lt_100": 1123
+      }
+    },
+    {
+      "split": "test",
+      "input_file": "hindi/corpus/splits/test.jsonl",
+      "output_file": "hindi/corpus/tokenised_splits/test.jsonl",
+      "documents_ok": 14765,
+      "documents_skipped": 0,
+      "documents_empty_text": 0,
+      "documents_malformed": 0,
+      "total_tokens": 14397392,
+      "avg_tokens_per_doc": 975.1,
+      "by_source_category": {
+        "manual": {
+          "documents": 2766,
+          "tokens": 2517696,
+          "avg_tokens_per_doc": 910.23
+        },
+        "public": {
+          "documents": 11999,
+          "tokens": 11879696,
+          "avg_tokens_per_doc": 990.06
+        },
+        "other": {
+          "documents": 0,
+          "tokens": 0,
+          "avg_tokens_per_doc": 0
+        }
+      },
+      "unknown_source_values": {},
+      "vocab_usage": {
+        "vocab_size": 10000,
+        "total_token_occurrences": 14397392,
+        "unique_token_ids_observed": 9143,
+        "coverage_pct": 91.43,
+        "zero_frequency_tokens": 857,
+        "tokens_occurring_exactly_1": 59,
+        "tokens_occurring_lt_10": 240,
+        "tokens_occurring_lt_100": 1093
+      }
+    }
+  ]
+}

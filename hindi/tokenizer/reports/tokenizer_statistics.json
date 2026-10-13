@@ -1,0 +1,845 @@
+{
+  "language": "hindi",
+  "model_type": "bpe",
+  "note": "No automatic vocabulary selection. Review vocab_comparison.csv to choose. BpeTrainer does not expose a random seed; results are deterministic on identical ordered input.",
+  "training_corpus": {
+    "documents": 1453379,
+    "words": 596059531,
+    "characters": 3068148482
+  },
+  "validation_corpus": {
+    "documents": 14595,
+    "words": 5972729,
+    "characters": 30670699
+  },
+  "candidates": [
+    {
+      "vocab_size": 5000,
+      "actual_vocab": 5000,
+      "evaluation": {
+        "documents": 14595,
+        "total_characters": 30670699,
+        "total_words": 5972729,
+        "total_tokens": 15204715,
+        "fertility": 2.5457,
+        "chars_per_token": 2.0172,
+        "unk_count": 1,
+        "unk_rate": 6.576907229106234e-08,
+        "vocab_size": 5000,
+        "actual_vocab": 5000
+      },
+      "token_frequency": {
+        "total_token_occurrences": 15204715,
+        "unique_tokens_observed": 4142,
+        "min_frequency": 1,
+        "max_frequency": 5829095,
+        "mean_frequency": 3670.86,
+        "median_frequency": 725.5,
+        "top50_tokens": [
+          {
+            "token_id": 4,
+            "piece": "<SPACE>",
+            "count": 5829095
+          },
+          {
+            "token_id": 444,
+            "piece": "।",
+            "count": 268307
+          },
+          {
+            "token_id": 1187,
+            "piece": "के",
+            "count": 242064
+          },
+          {
+            "token_id": 1190,
+            "piece": "है",
+            "count": 182017
+          },
+          {
+            "token_id": 1195,
+            "piece": "में",
+            "count": 174306
+          },
+          {
+            "token_id": 18,
+            "piece": ",",
+            "count": 172391
+          },
+          {
+            "token_id": 1197,
+            "piece": "की",
+            "count": 143764
+          },
+          {
+            "token_id": 5,
+            "piece": "<NEWLINE>",
+            "count": 139689
+          },
+          {
+            "token_id": 1198,
+            "piece": "से",
+            "count": 114152
+          },
+          {
+            "token_id": 1207,
+            "piece": "को",
+            "count": 111041
+          },
+          {
+            "token_id": 1196,
+            "piece": "का",
+            "count": 105051
+          },
+          {
+            "token_id": 1213,
+            "piece": "और",
+            "count": 100092
+          },
+          {
+            "token_id": 1193,
+            "piece": "ने",
+            "count": 84909
+          },
+          {
+            "token_id": 19,
+            "piece": "-",
+            "count": 67736
+          },
+          {
+            "token_id": 1217,
+            "piece": "पर",
+            "count": 66160
+          },
+          {
+            "token_id": 1231,
+            "piece": "हैं",
+            "count": 64546
+          },
+          {
+            "token_id": 20,
+            "piece": ".",
+            "count": 61625
+          },
+          {
+            "token_id": 1206,
+            "piece": "कि",
+            "count": 57779
+          },
+          {
+            "token_id": 1234,
+            "piece": "भी",
+            "count": 49049
+          },
+          {
+            "token_id": 1200,
+            "piece": "कर",
+            "count": 49002
+          },
+          {
+            "token_id": 392,
+            "piece": "न",
+            "count": 48697
+          },
+          {
+            "token_id": 1246,
+            "piece": "एक",
+            "count": 46740
+          },
+          {
+            "token_id": 373,
+            "piece": "क",
+            "count": 40675
+          },
+          {
+            "token_id": 408,
+            "piece": "स",
+            "count": 37580
+          },
+          {
+            "token_id": 1257,
+            "piece": "लिए",
+            "count": 37124
+          },
+          {
+            "token_id": 1232,
+            "piece": "इस",
+            "count": 36523
+          },
+          {
+            "token_id": 1216,
+            "piece": "ही",
+            "count": 35639
+          },
+          {
+            "token_id": 1264,
+            "piece": "नहीं",
+            "count": 35215
+          },
+          {
+            "token_id": 398,
+            "piece": "म",
+            "count": 35121
+          },
+          {
+            "token_id": 1199,
+            "piece": "ों",
+            "count": 33730
+          },
+          {
+            "token_id": 1225,
+            "piece": "हो",
+            "count": 33261
+          },
+          {
+            "token_id": 14,
+            "piece": "(",
+            "count": 32331
+          },
+          {
+            "token_id": 402,
+            "piece": "ल",
+            "count": 30584
+          },
+          {
+            "token_id": 1272,
+            "piece": "यह",
+            "count": 30555
+          },
+          {
+            "token_id": 1208,
+            "piece": "ता",
+            "count": 29815
+          },
+          {
+            "token_id": 1271,
+            "piece": "किया",
+            "count": 29778
+          },
+          {
+            "token_id": 1244,
+            "piece": "था",
+            "count": 29745
+          },
+          {
+            "token_id": 15,
+            "piece": ")",
+            "count": 29263
+          },
+          {
+            "token_id": 388,
+            "piece": "त",
+            "count": 28639
+          },
+          {
+            "token_id": 400,
+            "piece": "र",
+            "count": 28064
+          },
+          {
+            "token_id": 1210,
+            "piece": "ना",
+            "count": 27992
+          },
+          {
+            "token_id": 1194,
+            "piece": "या",
+            "count": 27238
+          },
+          {
+            "token_id": 380,
+            "piece": "ज",
+            "count": 26977
+          },
+          {
+            "token_id": 357,
+            "piece": "अ",
+            "count": 26832
+          },
+          {
+            "token_id": 1279,
+            "piece": "तो",
+            "count": 26766
+          },
+          {
+            "token_id": 405,
+            "piece": "व",
+            "count": 26706
+          },
+          {
+            "token_id": 13,
+            "piece": "'",
+            "count": 26193
+          },
+          {
+            "token_id": 394,
+            "piece": "प",
+            "count": 24667
+          },
+          {
+            "token_id": 1295,
+            "piece": "गया",
+            "count": 24314
+          },
+          {
+            "token_id": 358,
+            "piece": "आ",
+            "count": 24284
+          }
+        ]
+      }
+    },
+    {
+      "vocab_size": 7500,
+      "actual_vocab": 7500,
+      "evaluation": {
+        "documents": 14595,
+        "total_characters": 30670699,
+        "total_words": 5972729,
+        "total_tokens": 14537445,
+        "fertility": 2.434,
+        "chars_per_token": 2.1098,
+        "unk_count": 1,
+        "unk_rate": 6.878787847520661e-08,
+        "vocab_size": 7500,
+        "actual_vocab": 7500
+      },
+      "token_frequency": {
+        "total_token_occurrences": 14537445,
+        "unique_tokens_observed": 6641,
+        "min_frequency": 1,
+        "max_frequency": 5829095,
+        "mean_frequency": 2189.04,
+        "median_frequency": 366,
+        "top50_tokens": [
+          {
+            "token_id": 4,
+            "piece": "<SPACE>",
+            "count": 5829095
+          },
+          {
+            "token_id": 444,
+            "piece": "।",
+            "count": 267632
+          },
+          {
+            "token_id": 1187,
+            "piece": "के",
+            "count": 238423
+          },
+          {
+            "token_id": 1190,
+            "piece": "है",
+            "count": 181172
+          },
+          {
+            "token_id": 1195,
+            "piece": "में",
+            "count": 174065
+          },
+          {
+            "token_id": 18,
+            "piece": ",",
+            "count": 171840
+          },
+          {
+            "token_id": 1197,
+            "piece": "की",
+            "count": 140839
+          },
+          {
+            "token_id": 5,
+            "piece": "<NEWLINE>",
+            "count": 139689
+          },
+          {
+            "token_id": 1198,
+            "piece": "से",
+            "count": 111197
+          },
+          {
+            "token_id": 1207,
+            "piece": "को",
+            "count": 107983
+          },
+          {
+            "token_id": 1213,
+            "piece": "और",
+            "count": 100092
+          },
+          {
+            "token_id": 1196,
+            "piece": "का",
+            "count": 99593
+          },
+          {
+            "token_id": 1193,
+            "piece": "ने",
+            "count": 73796
+          },
+          {
+            "token_id": 19,
+            "piece": "-",
+            "count": 67027
+          },
+          {
+            "token_id": 1231,
+            "piece": "हैं",
+            "count": 64546
+          },
+          {
+            "token_id": 1217,
+            "piece": "पर",
+            "count": 63625
+          },
+          {
+            "token_id": 20,
+            "piece": ".",
+            "count": 61108
+          },
+          {
+            "token_id": 1206,
+            "piece": "कि",
+            "count": 54942
+          },
+          {
+            "token_id": 1234,
+            "piece": "भी",
+            "count": 48640
+          },
+          {
+            "token_id": 1246,
+            "piece": "एक",
+            "count": 45873
+          },
+          {
+            "token_id": 1200,
+            "piece": "कर",
+            "count": 45334
+          },
+          {
+            "token_id": 1257,
+            "piece": "लिए",
+            "count": 36769
+          },
+          {
+            "token_id": 392,
+            "piece": "न",
+            "count": 35828
+          },
+          {
+            "token_id": 1232,
+            "piece": "इस",
+            "count": 35740
+          },
+          {
+            "token_id": 1264,
+            "piece": "नहीं",
+            "count": 35215
+          },
+          {
+            "token_id": 1216,
+            "piece": "ही",
+            "count": 34503
+          },
+          {
+            "token_id": 1225,
+            "piece": "हो",
+            "count": 32743
+          },
+          {
+            "token_id": 14,
+            "piece": "(",
+            "count": 32331
+          },
+          {
+            "token_id": 1272,
+            "piece": "यह",
+            "count": 30555
+          },
+          {
+            "token_id": 1271,
+            "piece": "किया",
+            "count": 29553
+          },
+          {
+            "token_id": 1244,
+            "piece": "था",
+            "count": 28917
+          },
+          {
+            "token_id": 15,
+            "piece": ")",
+            "count": 28543
+          },
+          {
+            "token_id": 1279,
+            "piece": "तो",
+            "count": 26766
+          },
+          {
+            "token_id": 13,
+            "piece": "'",
+            "count": 25977
+          },
+          {
+            "token_id": 373,
+            "piece": "क",
+            "count": 25025
+          },
+          {
+            "token_id": 1295,
+            "piece": "गया",
+            "count": 24314
+          },
+          {
+            "token_id": 408,
+            "piece": "स",
+            "count": 23170
+          },
+          {
+            "token_id": 398,
+            "piece": "म",
+            "count": 22684
+          },
+          {
+            "token_id": 1298,
+            "piece": "करने",
+            "count": 22557
+          },
+          {
+            "token_id": 1302,
+            "piece": "साथ",
+            "count": 21097
+          },
+          {
+            "token_id": 1199,
+            "piece": "ों",
+            "count": 21066
+          },
+          {
+            "token_id": 1208,
+            "piece": "ता",
+            "count": 20764
+          },
+          {
+            "token_id": 405,
+            "piece": "व",
+            "count": 20114
+          },
+          {
+            "token_id": 1210,
+            "piece": "ना",
+            "count": 20097
+          },
+          {
+            "token_id": 1194,
+            "piece": "या",
+            "count": 19977
+          },
+          {
+            "token_id": 1297,
+            "piece": "जो",
+            "count": 19727
+          },
+          {
+            "token_id": 1226,
+            "piece": "जा",
+            "count": 19138
+          },
+          {
+            "token_id": 402,
+            "piece": "ल",
+            "count": 18411
+          },
+          {
+            "token_id": 357,
+            "piece": "अ",
+            "count": 18353
+          },
+          {
+            "token_id": 358,
+            "piece": "आ",
+            "count": 17051
+          }
+        ]
+      }
+    },
+    {
+      "vocab_size": 10000,
+      "actual_vocab": 10000,
+      "evaluation": {
+        "documents": 14595,
+        "total_characters": 30670699,
+        "total_words": 5972729,
+        "total_tokens": 14176544,
+        "fertility": 2.3735,
+        "chars_per_token": 2.1635,
+        "unk_count": 1,
+        "unk_rate": 7.053905380606162e-08,
+        "vocab_size": 10000,
+        "actual_vocab": 10000
+      },
+      "token_frequency": {
+        "total_token_occurrences": 14176544,
+        "unique_tokens_observed": 9134,
+        "min_frequency": 1,
+        "max_frequency": 5829095,
+        "mean_frequency": 1552.06,
+        "median_frequency": 232.0,
+        "top50_tokens": [
+          {
+            "token_id": 4,
+            "piece": "<SPACE>",
+            "count": 5829095
+          },
+          {
+            "token_id": 444,
+            "piece": "।",
+            "count": 267632
+          },
+          {
+            "token_id": 1187,
+            "piece": "के",
+            "count": 237079
+          },
+          {
+            "token_id": 1190,
+            "piece": "है",
+            "count": 181172
+          },
+          {
+            "token_id": 1195,
+            "piece": "में",
+            "count": 173466
+          },
+          {
+            "token_id": 18,
+            "piece": ",",
+            "count": 171840
+          },
+          {
+            "token_id": 1197,
+            "piece": "की",
+            "count": 139716
+          },
+          {
+            "token_id": 5,
+            "piece": "<NEWLINE>",
+            "count": 139689
+          },
+          {
+            "token_id": 1198,
+            "piece": "से",
+            "count": 109162
+          },
+          {
+            "token_id": 1207,
+            "piece": "को",
+            "count": 106168
+          },
+          {
+            "token_id": 1213,
+            "piece": "और",
+            "count": 99934
+          },
+          {
+            "token_id": 1196,
+            "piece": "का",
+            "count": 96058
+          },
+          {
+            "token_id": 1193,
+            "piece": "ने",
+            "count": 70410
+          },
+          {
+            "token_id": 19,
+            "piece": "-",
+            "count": 66622
+          },
+          {
+            "token_id": 1231,
+            "piece": "हैं",
+            "count": 64221
+          },
+          {
+            "token_id": 1217,
+            "piece": "पर",
+            "count": 62585
+          },
+          {
+            "token_id": 20,
+            "piece": ".",
+            "count": 61108
+          },
+          {
+            "token_id": 1206,
+            "piece": "कि",
+            "count": 54043
+          },
+          {
+            "token_id": 1234,
+            "piece": "भी",
+            "count": 48522
+          },
+          {
+            "token_id": 1246,
+            "piece": "एक",
+            "count": 45384
+          },
+          {
+            "token_id": 1200,
+            "piece": "कर",
+            "count": 41982
+          },
+          {
+            "token_id": 1257,
+            "piece": "लिए",
+            "count": 36769
+          },
+          {
+            "token_id": 1232,
+            "piece": "इस",
+            "count": 35295
+          },
+          {
+            "token_id": 1264,
+            "piece": "नहीं",
+            "count": 35215
+          },
+          {
+            "token_id": 1216,
+            "piece": "ही",
+            "count": 33879
+          },
+          {
+            "token_id": 1225,
+            "piece": "हो",
+            "count": 32402
+          },
+          {
+            "token_id": 14,
+            "piece": "(",
+            "count": 32193
+          },
+          {
+            "token_id": 1272,
+            "piece": "यह",
+            "count": 30463
+          },
+          {
+            "token_id": 1271,
+            "piece": "किया",
+            "count": 29553
+          },
+          {
+            "token_id": 1244,
+            "piece": "था",
+            "count": 28580
+          },
+          {
+            "token_id": 15,
+            "piece": ")",
+            "count": 28387
+          },
+          {
+            "token_id": 392,
+            "piece": "न",
+            "count": 27402
+          },
+          {
+            "token_id": 1279,
+            "piece": "तो",
+            "count": 26480
+          },
+          {
+            "token_id": 13,
+            "piece": "'",
+            "count": 25852
+          },
+          {
+            "token_id": 1295,
+            "piece": "गया",
+            "count": 24314
+          },
+          {
+            "token_id": 1298,
+            "piece": "करने",
+            "count": 22080
+          },
+          {
+            "token_id": 1302,
+            "piece": "साथ",
+            "count": 21097
+          },
+          {
+            "token_id": 1297,
+            "piece": "जो",
+            "count": 19017
+          },
+          {
+            "token_id": 1194,
+            "piece": "या",
+            "count": 17734
+          },
+          {
+            "token_id": 373,
+            "piece": "क",
+            "count": 17450
+          },
+          {
+            "token_id": 1226,
+            "piece": "जा",
+            "count": 17015
+          },
+          {
+            "token_id": 1208,
+            "piece": "ता",
+            "count": 16919
+          },
+          {
+            "token_id": 1339,
+            "piece": "अपने",
+            "count": 16888
+          },
+          {
+            "token_id": 398,
+            "piece": "म",
+            "count": 16847
+          },
+          {
+            "token_id": 405,
+            "piece": "व",
+            "count": 16454
+          },
+          {
+            "token_id": 8,
+            "piece": "\"",
+            "count": 16420
+          },
+          {
+            "token_id": 1210,
+            "piece": "ना",
+            "count": 16359
+          },
+          {
+            "token_id": 1333,
+            "piece": "कहा",
+            "count": 16340
+          },
+          {
+            "token_id": 1332,
+            "piece": "बाद",
+            "count": 16308
+          },
+          {
+            "token_id": 408,
+            "piece": "स",
+            "count": 16285
+          }
+        ]
+      }
+    }
+  ]
+}

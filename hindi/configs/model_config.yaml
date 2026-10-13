@@ -1,0 +1,59 @@
+# model_config.yaml
+# ============================================================
+# Hindi Decoder-Only Transformer — Model Hyperparameters
+# Phase 2: Architecture definition (no training settings here).
+# ============================================================
+#
+# Usage (from repo root):
+#   from hindi.model.config import ModelConfig
+#   cfg = ModelConfig.from_yaml("hindi/configs/model_config.yaml")
+#
+# Nepali replication:
+#   Copy hindi/model/ → nepali/model/ (unchanged).
+#   Create nepali/configs/model_config.yaml with this same structure
+#   but adjusted values if needed (e.g. different vocab_size).
+
+# ── Vocabulary ────────────────────────────────────────────────────────────────
+# Must match the selected BPE tokenizer vocabulary size.
+# Phase 1 selected: hindi/tokenizer/models/bpe_v10000.json
+vocab_size: 10000
+
+# Special token IDs (informational — used by training/eval scripts, not model).
+# [UNK] = 0  [PAD] = 1  [BOS] = 2  [EOS] = 3
+# <SPACE> = 4  <NEWLINE> = 5  <TAB> = 6
+
+# ── Sequence length ───────────────────────────────────────────────────────────
+# Maximum number of tokens the model can attend to in one forward pass.
+# RoPE frequencies and the causal mask are precomputed up to this length.
+context_length: 512
+
+# ── Core dimensions ───────────────────────────────────────────────────────────
+# d_model must be evenly divisible by num_heads.
+# head_dim = d_model // num_heads = 384 // 6 = 64 (derived, not stored here).
+d_model: 384
+num_heads: 6
+
+# ── Depth ─────────────────────────────────────────────────────────────────────
+num_layers: 12
+
+# ── Feed-forward network ──────────────────────────────────────────────────────
+# Standard 4× expansion: ffn_dim = 4 * d_model = 1536.
+# Activation: GELU (hardcoded in transformer_block.py).
+ffn_dim: 1536
+
+# ── Regularisation ────────────────────────────────────────────────────────────
+# Three independent dropout rates, all currently set to 0.1.
+# Set all to 0.0 to disable dropout entirely (e.g. for inference-only use).
+embedding_dropout: 0.1   # applied to token embeddings before first block
+attention_dropout: 0.1   # applied to attention probabilities after softmax
+residual_dropout: 0.1    # applied to sub-layer outputs before residual add
+
+# ── Positional encoding ───────────────────────────────────────────────────────
+# RoPE is the only supported PE; there is no learned absolute PE table.
+# This key is informational / for documentation purposes.
+positional_encoding: RoPE
+
+# ── Weight tying ──────────────────────────────────────────────────────────────
+# Input token embedding weight is shared with the output projection weight.
+# This key is informational; tying is always enabled in transformer.py.
+tie_embeddings: true

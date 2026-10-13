@@ -1,0 +1,5 @@
+language,split,generation_method,temperature,seed,prefix_len,max_new_tokens,num_examples,bleu,chrf,rouge_l,repetition_rate,distinct_1,distinct_2
+nepali,test,greedy,N/A,42,64,64,500,1.8775,17.8625,0.0827,0.5008,0.1024,0.2906
+nepali,test,temperature,0.5,42,64,64,500,1.9386,20.4337,0.0935,0.1295,0.1672,0.5682
+nepali,test,temperature,1.0,42,64,64,500,0.7900,19.5160,0.0584,0.0045,0.2620,0.8716
+nepali,test,temperature,1.5,42,64,64,500,0.2056,18.3791,0.0299,0.0000,0.2851,0.9704

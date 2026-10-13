@@ -1,0 +1,13 @@
+language,tokenizer_path,vocab_size,split,source_category,documents,tokens,avg_tokens_per_doc,unique_token_ids,coverage_pct,zero_frequency_tokens
+nepali,nepali/tokenizer/models/bpe_v10000.json,10000,train,manual,155336,139410635,897.48,9994,99.94,6
+nepali,nepali/tokenizer/models/bpe_v10000.json,10000,train,public,1540592,1131167651,734.24,9994,99.94,6
+nepali,nepali/tokenizer/models/bpe_v10000.json,10000,train,other,0,0,0,9994,99.94,6
+nepali,nepali/tokenizer/models/bpe_v10000.json,10000,train,TOTAL,1695928,1270578286,749.19,9994,99.94,6
+nepali,nepali/tokenizer/models/bpe_v10000.json,10000,val,manual,1589,1457272,917.1,9442,94.42,558
+nepali,nepali/tokenizer/models/bpe_v10000.json,10000,val,public,15736,11472497,729.06,9442,94.42,558
+nepali,nepali/tokenizer/models/bpe_v10000.json,10000,val,other,0,0,0,9442,94.42,558
+nepali,nepali/tokenizer/models/bpe_v10000.json,10000,val,TOTAL,17325,12929769,746.31,9442,94.42,558
+nepali,nepali/tokenizer/models/bpe_v10000.json,10000,test,manual,1464,1375527,939.57,9434,94.34,566
+nepali,nepali/tokenizer/models/bpe_v10000.json,10000,test,public,15699,11483686,731.49,9434,94.34,566
+nepali,nepali/tokenizer/models/bpe_v10000.json,10000,test,other,0,0,0,9434,94.34,566
+nepali,nepali/tokenizer/models/bpe_v10000.json,10000,test,TOTAL,17163,12859213,749.24,9434,94.34,566

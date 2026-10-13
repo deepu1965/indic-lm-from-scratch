@@ -1,0 +1,41 @@
+=== GROUND TRUTH AUDIT SUMMARY ===
+Total Test Records Evaluated: 1400
+Equality Records (excluded from mismatch counts): 150
+
+Independent Answer == Ground Truth Answer Entity: 942
+Independent Answer != Ground Truth Answer Entity: 308
+
+Independent Answer == Target Text Entity: 1250
+Independent Answer != Target Text Entity: 0
+
+Ground Truth Answer Entity == Target Text Entity: 942
+Ground Truth Answer Entity != Target Text Entity: 308
+
+=== BREAKDOWNS (Independent != GT) ===
+
+by_language:
+  hi: 145 / 700
+  ne: 163 / 700
+
+by_task_family:
+  direct_comparison: 34 / 200
+  largest_smallest: 0 / 200
+  general_comparison: 0 / 200
+  two_hop_transitivity: 108 / 200
+  three_hop_transitivity: 60 / 200
+  reversed_relation: 51 / 200
+  mixed_equality: 55 / 200
+
+by_difficulty:
+  easy: 59 / 420
+  medium: 134 / 560
+  hard: 115 / 420
+
+by_representation:
+  relational: 233 / 1048
+  numerical: 75 / 352
+
+by_question_direction:
+  greater: 0 / 724
+  less: 308 / 330
+  general: 0 / 346

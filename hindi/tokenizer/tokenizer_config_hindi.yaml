@@ -1,0 +1,64 @@
+# tokenizer_config_hindi.yaml
+# Configuration for Hindi BPE tokenizer training (from scratch).
+# Run: python3 hindi/tokenizer/tokenizer.py --config hindi/tokenizer/tokenizer_config_hindi.yaml
+
+language: "hindi"
+
+# ── Input corpus (splits) ────────────────────────────────────────────────────
+train_file: "hindi/corpus/splits/train.jsonl"
+val_file:   "hindi/corpus/splits/val.jsonl"
+test_file:  "hindi/corpus/splits/test.jsonl"
+
+# ── Output directories ────────────────────────────────────────────────────────
+output_dir:  "hindi/tokenizer"
+models_dir:  "hindi/tokenizer/models"
+reports_dir: "hindi/tokenizer/reports"
+
+# ── Vocabulary candidates for comparison ─────────────────────────────────────
+vocab_sizes:
+  - 5000
+  - 7500
+  - 10000
+
+# ── BPE model settings ────────────────────────────────────────────────────────
+model_type: "bpe"
+
+# Special tokens added to every vocabulary.
+special_tokens:
+  - "[UNK]"
+  - "[PAD]"
+  - "[BOS]"
+  - "[EOS]"
+  - "<SPACE>"
+  - "<NEWLINE>"
+  - "<TAB>"
+
+# ── Memory / streaming settings ──────────────────────────────────────────────
+# Maximum characters per chunk fed to the BPE trainer.
+# Documents longer than this are split into consecutive chunks so that no
+# single Python string is excessively large.  All content is preserved.
+# 50 000 chars ≈ 10 000 words — a safe upper bound for most systems.
+max_chunk_chars: 50000
+
+# Optional cap on total characters streamed from train.jsonl.
+# null = use the full training file.
+training_max_chars: null
+
+# Optional cap on characters read from val.jsonl during evaluation.
+# null = use the whole validation split.
+validation_max_chars: null
+
+# ── Reproducibility ──────────────────────────────────────────────────────────
+# BpeTrainer does not expose a random seed parameter.
+# BPE merge selection is deterministic on identical ordered input.
+# random_seed is intentionally absent.
+
+# ── Tokenization examples ────────────────────────────────────────────────────
+# Representative sentences shown in tokenization_examples_v<N>.txt reports.
+example_sentences:
+  - "नमस्ते, आप कैसे हैं?"
+  - "हिंदी भाषा भारत की राजभाषा है।"
+  - "आज का मौसम बहुत अच्छा है।"
+  - "सरकार ने नई शिक्षा नीति लागू की।"
+  - "प्रौद्योगिकी के क्षेत्र में भारत तेजी से आगे बढ़ रहा है।"
+  - "रामायण और महाभारत भारत के महान ग्रंथ हैं।"

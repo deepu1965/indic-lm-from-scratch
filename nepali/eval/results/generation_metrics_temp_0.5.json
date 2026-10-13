@@ -1,0 +1,16 @@
+{
+    "language": "nepali",
+    "split": "test",
+    "generation_method": "temperature",
+    "temperature": 0.5,
+    "seed": 42,
+    "prefix_len": 64,
+    "max_new_tokens": 64,
+    "num_examples": 500,
+    "bleu": 1.9385857042546475,
+    "chrf": 20.43374059891492,
+    "rouge_l": 0.09352792794583716,
+    "repetition_rate": 0.1295115458428775,
+    "distinct_1": 0.16722370135387754,
+    "distinct_2": 0.5682387920480383
+}

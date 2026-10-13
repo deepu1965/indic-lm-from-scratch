@@ -1,0 +1,950 @@
+{
+  "hi_pre": {
+    "overall": {
+      "total": 700,
+      "reasoning_correct": 2,
+      "reasoning_incorrect": 698,
+      "error_categories": {
+        "no_recognizable_answer": 620,
+        "equality_relation_missing": 75,
+        "wrong_entity": 2,
+        "ambiguous_multiple_entities": 1
+      }
+    },
+    "per_family": {
+      "direct_comparison": {
+        "total": 100,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 100,
+        "error_categories": {
+          "no_recognizable_answer": 63,
+          "equality_relation_missing": 35,
+          "wrong_entity": 1,
+          "ambiguous_multiple_entities": 1
+        }
+      },
+      "largest_smallest": {
+        "total": 100,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 100,
+        "error_categories": {
+          "no_recognizable_answer": 100
+        }
+      },
+      "general_comparison": {
+        "total": 100,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 100,
+        "error_categories": {
+          "no_recognizable_answer": 59,
+          "equality_relation_missing": 40,
+          "wrong_entity": 1
+        }
+      },
+      "two_hop_transitivity": {
+        "total": 100,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 100,
+        "error_categories": {
+          "no_recognizable_answer": 100
+        }
+      },
+      "three_hop_transitivity": {
+        "total": 100,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 100,
+        "error_categories": {
+          "no_recognizable_answer": 100
+        }
+      },
+      "reversed_relation": {
+        "total": 100,
+        "reasoning_correct": 1,
+        "reasoning_incorrect": 99,
+        "error_categories": {
+          "no_recognizable_answer": 99
+        }
+      },
+      "mixed_equality": {
+        "total": 100,
+        "reasoning_correct": 1,
+        "reasoning_incorrect": 99,
+        "error_categories": {
+          "no_recognizable_answer": 99
+        }
+      }
+    },
+    "per_difficulty": {
+      "easy": {
+        "total": 210,
+        "reasoning_correct": 1,
+        "reasoning_incorrect": 209,
+        "error_categories": {
+          "no_recognizable_answer": 172,
+          "equality_relation_missing": 34,
+          "wrong_entity": 2,
+          "ambiguous_multiple_entities": 1
+        }
+      },
+      "medium": {
+        "total": 280,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 280,
+        "error_categories": {
+          "no_recognizable_answer": 249,
+          "equality_relation_missing": 31
+        }
+      },
+      "hard": {
+        "total": 210,
+        "reasoning_correct": 1,
+        "reasoning_incorrect": 209,
+        "error_categories": {
+          "no_recognizable_answer": 199,
+          "equality_relation_missing": 10
+        }
+      }
+    },
+    "exact_match_vs_reasoning": {
+      "rc_true_em_false": 2,
+      "rc_false_em_false": 698,
+      "rc_true_em_true": 0
+    },
+    "representative_errors": {
+      "wrong_entity": [
+        {
+          "id": "000539",
+          "task_family": "direct_comparison",
+          "difficulty": "easy",
+          "input_text": "दी गई जानकारी के अनुसार, करण की कीमत कुणाल से अधिक है। इनमें से किसकी कीमत कम है: करण या कुणाल?",
+          "target_text": "कुणाल की कीमत कम है。",
+          "generated_text": "नई दिल्ली । बॉलीवुड एक्टर करण जौ हर ने अपने इंस्टाग्राम अकाउंट पर एक वीडियो शेयर",
+          "independently_resolved_answer": "E02",
+          "predicted_answer": "E01",
+          "reasoning_correct": false,
+          "exact_match": false
+        },
+        {
+          "id": "002960",
+          "task_family": "general_comparison",
+          "difficulty": "easy",
+          "input_text": "करण की कीमत कुणाल से कम है। करण और कुणाल में से किसकी कीमत अधिक है?",
+          "target_text": "कुणाल की कीमत अधिक है।",
+          "generated_text": "नई दिल्ली । बॉलीवुड के मशहूर अभिनेता और अभिनेता करण जौ हर की फिल्म ' द",
+          "independently_resolved_answer": "E02",
+          "predicted_answer": "E01",
+          "reasoning_correct": false,
+          "exact_match": false
+        }
+      ],
+      "ambiguous_multiple_entities": [
+        {
+          "id": "000608",
+          "task_family": "direct_comparison",
+          "difficulty": "easy",
+          "input_text": "दी गई जानकारी के अनुसार, करण की कीमत कुणाल से कम है। इनमें से किसकी कीमत कम है: करण या कुणाल?",
+          "target_text": "करण की कीमत कम है。",
+          "generated_text": "नई दिल्ली । बॉलीवुड एक्टर करण या कु णा ल ( S ha h ru k h Khan ) ने अपने",
+          "independently_resolved_answer": "E01",
+          "predicted_answer": "AMBIGUOUS",
+          "reasoning_correct": false,
+          "exact_match": false
+        }
+      ],
+      "no_recognizable_answer": [
+        {
+          "id": "003250",
+          "task_family": "two_hop_transitivity",
+          "difficulty": "hard",
+          "input_text": "यह ज्ञात है कि रिया की मात्रा ज्योति से अधिक है। साथ ही, ज्योति की मात्रा प्रवीण से अधिक है। इनमें से किसकी मात्रा कम है: प्रवीण या रिया?",
+          "target_text": "प्रवीण की मात्रा कम है。",
+          "generated_text": "नई दिल्ली । भारत में कोरोना वायरस के बढ़ते मामलों के बीच अब तक कुल",
+          "independently_resolved_answer": "E01",
+          "predicted_answer": null,
+          "reasoning_correct": false,
+          "exact_match": false
+        },
+        {
+          "id": "003073",
+          "task_family": "two_hop_transitivity",
+          "difficulty": "hard",
+          "input_text": "दी गई जानकारी यह है कि करण की मात्रा कुणाल से कम है, सिमरन की मात्रा कुणाल से अधिक है। करण और सिमरन की तुलना करने पर किसकी मात्रा कम है?",
+          "target_text": "करण की मात्रा कम है。",
+          "generated_text": "नई दिल्ली । भारत में कोरोना वायरस के बढ़ते मामलों के बीच भारत में कोरोना",
+          "independently_resolved_answer": "E01",
+          "predicted_answer": null,
+          "reasoning_correct": false,
+          "exact_match": false
+        }
+      ],
+      "equality_relation_missing": [
+        {
+          "id": "000500",
+          "task_family": "direct_comparison",
+          "difficulty": "medium",
+          "input_text": "दी गई जानकारी के अनुसार, मुस्कान और कुणाल की उम्र बराबर है। क्या कुणाल और मुस्कान की उम्र एक समान है?",
+          "target_text": "कुणाल और मुस्कान की उम्र बराबर है।",
+          "generated_text": "नई दिल्ली । देश में कोरोना वायरस के बढ़ते मामलों के बीच देश में कोरोना",
+          "independently_resolved_answer": null,
+          "predicted_answer": "EQUAL_CASE",
+          "reasoning_correct": false,
+          "exact_match": false
+        },
+        {
+          "id": "000399",
+          "task_family": "direct_comparison",
+          "difficulty": "easy",
+          "input_text": "पंकज की मात्रा 790 इकाई है है, जबकि कुणाल की मात्रा 790 इकाई है। बताइए, क्या पंकज और कुणाल की मात्रा समान है?",
+          "target_text": "पंकज और कुणाल की मात्रा बराबर है।",
+          "generated_text": "नई दिल्ली । देश में कोरोना वायरस के बढ़ते मामलों के बीच देश में कोरोना",
+          "independently_resolved_answer": null,
+          "predicted_answer": "EQUAL_CASE",
+          "reasoning_correct": false,
+          "exact_match": false
+        }
+      ]
+    },
+    "success_examples": [
+      {
+        "id": "005835",
+        "task_family": "reversed_relation",
+        "difficulty": "easy",
+        "input_text": "ज्योति की कीमत करण से अधिक है। इनमें से किसकी कीमत कम है: करण या ज्योति?",
+        "target_text": "करण की कीमत कम है。",
+        "generated_text": "नई दिल्ली । बॉलीवुड के दिग्गज अभिनेता और अभिनेता करण या बच्चन की फिल्म ' द",
+        "independently_resolved_answer": "E02",
+        "predicted_answer": "E02",
+        "reasoning_correct": true,
+        "exact_match": false
+      },
+      {
+        "id": "006027",
+        "task_family": "mixed_equality",
+        "difficulty": "hard",
+        "input_text": "ज्योति और सिमरन दोनों की उम्र बराबर है। करण की उम्र सिमरन से अधिक है। ज्योति की उम्र वरुण से अधिक है। बताइए, करण और वरुण में किसकी उम्र अधिक है?",
+        "target_text": "करण की उम्र अधिक है।",
+        "generated_text": "नई दिल्ली । बॉलीवुड एक्टर और बॉलीवुड अभिनेता करण जौ हर की फिल्म ' द कश्मीर",
+        "independently_resolved_answer": "E01",
+        "predicted_answer": "E01",
+        "reasoning_correct": true,
+        "exact_match": false
+      }
+    ],
+    "rc_true_em_false_examples": [
+      {
+        "id": "005835",
+        "task_family": "reversed_relation",
+        "difficulty": "easy",
+        "input_text": "ज्योति की कीमत करण से अधिक है। इनमें से किसकी कीमत कम है: करण या ज्योति?",
+        "target_text": "करण की कीमत कम है。",
+        "generated_text": "नई दिल्ली । बॉलीवुड के दिग्गज अभिनेता और अभिनेता करण या बच्चन की फिल्म ' द",
+        "independently_resolved_answer": "E02",
+        "predicted_answer": "E02",
+        "reasoning_correct": true,
+        "exact_match": false
+      },
+      {
+        "id": "006027",
+        "task_family": "mixed_equality",
+        "difficulty": "hard",
+        "input_text": "ज्योति और सिमरन दोनों की उम्र बराबर है। करण की उम्र सिमरन से अधिक है। ज्योति की उम्र वरुण से अधिक है। बताइए, करण और वरुण में किसकी उम्र अधिक है?",
+        "target_text": "करण की उम्र अधिक है।",
+        "generated_text": "नई दिल्ली । बॉलीवुड एक्टर और बॉलीवुड अभिनेता करण जौ हर की फिल्म ' द कश्मीर",
+        "independently_resolved_answer": "E01",
+        "predicted_answer": "E01",
+        "reasoning_correct": true,
+        "exact_match": false
+      }
+    ]
+  },
+  "hi_sft": {
+    "overall": {
+      "total": 700,
+      "reasoning_correct": 294,
+      "reasoning_incorrect": 406,
+      "error_categories": {
+        "wrong_entity": 158,
+        "no_recognizable_answer": 248
+      }
+    },
+    "per_family": {
+      "direct_comparison": {
+        "total": 100,
+        "reasoning_correct": 44,
+        "reasoning_incorrect": 56,
+        "error_categories": {
+          "wrong_entity": 17,
+          "no_recognizable_answer": 39
+        }
+      },
+      "largest_smallest": {
+        "total": 100,
+        "reasoning_correct": 19,
+        "reasoning_incorrect": 81,
+        "error_categories": {
+          "wrong_entity": 45,
+          "no_recognizable_answer": 36
+        }
+      },
+      "general_comparison": {
+        "total": 100,
+        "reasoning_correct": 39,
+        "reasoning_incorrect": 61,
+        "error_categories": {
+          "no_recognizable_answer": 41,
+          "wrong_entity": 20
+        }
+      },
+      "two_hop_transitivity": {
+        "total": 100,
+        "reasoning_correct": 40,
+        "reasoning_incorrect": 60,
+        "error_categories": {
+          "no_recognizable_answer": 33,
+          "wrong_entity": 27
+        }
+      },
+      "three_hop_transitivity": {
+        "total": 100,
+        "reasoning_correct": 65,
+        "reasoning_incorrect": 35,
+        "error_categories": {
+          "no_recognizable_answer": 33,
+          "wrong_entity": 2
+        }
+      },
+      "reversed_relation": {
+        "total": 100,
+        "reasoning_correct": 46,
+        "reasoning_incorrect": 54,
+        "error_categories": {
+          "wrong_entity": 23,
+          "no_recognizable_answer": 31
+        }
+      },
+      "mixed_equality": {
+        "total": 100,
+        "reasoning_correct": 41,
+        "reasoning_incorrect": 59,
+        "error_categories": {
+          "wrong_entity": 24,
+          "no_recognizable_answer": 35
+        }
+      }
+    },
+    "per_difficulty": {
+      "easy": {
+        "total": 210,
+        "reasoning_correct": 81,
+        "reasoning_incorrect": 129,
+        "error_categories": {
+          "wrong_entity": 53,
+          "no_recognizable_answer": 76
+        }
+      },
+      "medium": {
+        "total": 280,
+        "reasoning_correct": 115,
+        "reasoning_incorrect": 165,
+        "error_categories": {
+          "no_recognizable_answer": 106,
+          "wrong_entity": 59
+        }
+      },
+      "hard": {
+        "total": 210,
+        "reasoning_correct": 98,
+        "reasoning_incorrect": 112,
+        "error_categories": {
+          "wrong_entity": 46,
+          "no_recognizable_answer": 66
+        }
+      }
+    },
+    "exact_match_vs_reasoning": {
+      "rc_true_em_false": 15,
+      "rc_false_em_false": 406,
+      "rc_true_em_true": 279
+    },
+    "representative_errors": {
+      "wrong_entity": [
+        {
+          "id": "001192",
+          "task_family": "largest_smallest",
+          "difficulty": "medium",
+          "input_text": "करण की उम्र 52 वर्ष है। वरुण की उम्र 45 वर्ष है। ज्योति की उम्र 26 वर्ष है, तथा रिया की उम्र 24 वर्ष है। करण और वरुण में से किसकी उम्र अधिक है?",
+          "target_text": "रिया की उम्र सबसे कम है।",
+          "generated_text": "करण की उम्र सबसे कम है ।",
+          "independently_resolved_answer": "E04",
+          "predicted_answer": "E01",
+          "reasoning_correct": false,
+          "exact_match": false
+        },
+        {
+          "id": "000350",
+          "task_family": "direct_comparison",
+          "difficulty": "medium",
+          "input_text": "रिया की मात्रा प्रवीण से कम है। प्रवीण और रिया में से किसकी मात्रा अधिक है?",
+          "target_text": "प्रवीण की मात्रा अधिक है।",
+          "generated_text": "रिया की मात्रा अधिक है ।",
+          "independently_resolved_answer": "E02",
+          "predicted_answer": "E01",
+          "reasoning_correct": false,
+          "exact_match": false
+        }
+      ],
+      "no_recognizable_answer": [
+        {
+          "id": "005263",
+          "task_family": "reversed_relation",
+          "difficulty": "easy",
+          "input_text": "सिमरन की ऊँचाई प्रवीण से अधिक है। इनमें से किसकी ऊँचाई कम है: प्रवीण या सिमरन?",
+          "target_text": "प्रवीण की ऊँचाई कम है。",
+          "generated_text": "अंकित की ऊँ चाई कम है 。",
+          "independently_resolved_answer": "E02",
+          "predicted_answer": null,
+          "reasoning_correct": false,
+          "exact_match": false
+        },
+        {
+          "id": "001885",
+          "task_family": "largest_smallest",
+          "difficulty": "hard",
+          "input_text": "हमें निम्नलिखित जानकारी दी गई है: मुस्कान की उम्र वरुण से अधिक है, वरुण और ज्योति की उम्र बराबर है, ज्योति की उम्र पंकज से अधिक है। मुस्कान और वरुण में से किसकी उम्र अधिक है?",
+          "target_text": "पंकज की उम्र सबसे कम है।",
+          "generated_text": "प्रियंका की उम्र सबसे अधिक है ।",
+          "independently_resolved_answer": "E04",
+          "predicted_answer": null,
+          "reasoning_correct": false,
+          "exact_match": false
+        }
+      ]
+    },
+    "success_examples": [
+      {
+        "id": "003478",
+        "task_family": "two_hop_transitivity",
+        "difficulty": "hard",
+        "input_text": "मुस्कान की मात्रा कुणाल से कम है, तथा कुणाल और वरुण की मात्रा बराबर है। बताइए, मुस्कान और वरुण में किसकी मात्रा अधिक है?",
+        "target_text": "वरुण की मात्रा अधिक है।",
+        "generated_text": "वरुण की मात्रा अधिक है ।",
+        "independently_resolved_answer": "E03",
+        "predicted_answer": "E03",
+        "reasoning_correct": true,
+        "exact_match": true
+      },
+      {
+        "id": "003227",
+        "task_family": "two_hop_transitivity",
+        "difficulty": "medium",
+        "input_text": "यह ज्ञात है कि मीनाक्षी और रिया की उम्र बराबर है। साथ ही, सिमरन की उम्र रिया से अधिक है। इनमें से किसकी उम्र कम है: सिमरन या मीनाक्षी?",
+        "target_text": "मीनाक्षी की उम्र कम है。",
+        "generated_text": "मी ना क्षी की उम्र कम है 。",
+        "independently_resolved_answer": "E03",
+        "predicted_answer": "E03",
+        "reasoning_correct": true,
+        "exact_match": true
+      },
+      {
+        "id": "002285",
+        "task_family": "general_comparison",
+        "difficulty": "hard",
+        "input_text": "वरुण की उम्र 48 वर्ष है। रिया की उम्र 48 वर्ष है। करण की उम्र 48 वर्ष है। प्रवीण की उम्र 48 वर्ष है। बताइए, क्या वरुण और प्रवीण की उम्र समान है?",
+        "target_text": "वरुण और प्रवीण की उम्र बराबर है।",
+        "generated_text": "वरुण और प्रवीण की उम्र बराबर है ।",
+        "independently_resolved_answer": null,
+        "predicted_answer": "EQUAL_CASE",
+        "reasoning_correct": true,
+        "exact_match": true
+      }
+    ],
+    "rc_true_em_false_examples": [
+      {
+        "id": "001060",
+        "task_family": "largest_smallest",
+        "difficulty": "hard",
+        "input_text": "करण की ऊँचाई वरुण से अधिक है। वरुण और ज्योति की ऊँचाई बराबर है। ज्योति की ऊँचाई सिमरन से अधिक है। करण और वरुण में से किसकी ऊँचाई अधिक है?",
+        "target_text": "करण की ऊँचाई सबसे अधिक है।",
+        "generated_text": "करण की ऊँ चाई अधिक है ।",
+        "independently_resolved_answer": "E01",
+        "predicted_answer": "E01",
+        "reasoning_correct": true,
+        "exact_match": false
+      },
+      {
+        "id": "001063",
+        "task_family": "largest_smallest",
+        "difficulty": "easy",
+        "input_text": "रिया की कीमत करण से अधिक है। करण की कीमत सिमरन से अधिक है। रिया और करण में से किसकी कीमत अधिक है?",
+        "target_text": "रिया की कीमत सबसे अधिक है।",
+        "generated_text": "रिया की कीमत अधिक है ।",
+        "independently_resolved_answer": "E01",
+        "predicted_answer": "E01",
+        "reasoning_correct": true,
+        "exact_match": false
+      },
+      {
+        "id": "001110",
+        "task_family": "largest_smallest",
+        "difficulty": "hard",
+        "input_text": "प्रवीण की कीमत 8408 रुपये है। कुणाल की कीमत 5500 रुपये है। मुस्कान की कीमत 5500 रुपये है, तथा मीनाक्षी की कीमत 3510 रुपये है। प्रवीण और कुणाल में से किसकी कीमत अधिक है?",
+        "target_text": "प्रवीण की कीमत सबसे अधिक है।",
+        "generated_text": "प्रवीण की कीमत अधिक है ।",
+        "independently_resolved_answer": "E01",
+        "predicted_answer": "E01",
+        "reasoning_correct": true,
+        "exact_match": false
+      }
+    ]
+  },
+  "ne_pre": {
+    "overall": {
+      "total": 700,
+      "reasoning_correct": 0,
+      "reasoning_incorrect": 700,
+      "error_categories": {
+        "no_recognizable_answer": 627,
+        "equality_relation_missing": 73
+      }
+    },
+    "per_family": {
+      "direct_comparison": {
+        "total": 100,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 100,
+        "error_categories": {
+          "no_recognizable_answer": 67,
+          "equality_relation_missing": 33
+        }
+      },
+      "largest_smallest": {
+        "total": 100,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 100,
+        "error_categories": {
+          "no_recognizable_answer": 100
+        }
+      },
+      "general_comparison": {
+        "total": 100,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 100,
+        "error_categories": {
+          "no_recognizable_answer": 60,
+          "equality_relation_missing": 40
+        }
+      },
+      "two_hop_transitivity": {
+        "total": 100,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 100,
+        "error_categories": {
+          "no_recognizable_answer": 100
+        }
+      },
+      "three_hop_transitivity": {
+        "total": 100,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 100,
+        "error_categories": {
+          "no_recognizable_answer": 100
+        }
+      },
+      "reversed_relation": {
+        "total": 100,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 100,
+        "error_categories": {
+          "no_recognizable_answer": 100
+        }
+      },
+      "mixed_equality": {
+        "total": 100,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 100,
+        "error_categories": {
+          "no_recognizable_answer": 100
+        }
+      }
+    },
+    "per_difficulty": {
+      "easy": {
+        "total": 210,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 210,
+        "error_categories": {
+          "no_recognizable_answer": 177,
+          "equality_relation_missing": 33
+        }
+      },
+      "medium": {
+        "total": 280,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 280,
+        "error_categories": {
+          "no_recognizable_answer": 250,
+          "equality_relation_missing": 30
+        }
+      },
+      "hard": {
+        "total": 210,
+        "reasoning_correct": 0,
+        "reasoning_incorrect": 210,
+        "error_categories": {
+          "no_recognizable_answer": 200,
+          "equality_relation_missing": 10
+        }
+      }
+    },
+    "exact_match_vs_reasoning": {
+      "rc_true_em_false": 0,
+      "rc_false_em_false": 700,
+      "rc_true_em_true": 0
+    },
+    "representative_errors": {
+      "no_recognizable_answer": [
+        {
+          "id": "001414",
+          "task_family": "largest_smallest",
+          "difficulty": "medium",
+          "input_text": "हामीसँग निम्न जानकारी छ: दुर्गाको उचाइ 191 सेमी छ, विवेकको उचाइ 163 सेमी छ, सुरेशको उचाइ 144 सेमी छ। दुर्गा र विवेक मध्ये कसको उचाइ बढी छ?",
+          "target_text": "सुरेशको उचाइ सबैभन्दा कम छ।",
+          "generated_text": "काठमाडौं । नेपाल कम्युनिष्ट पार्टी ( नेकपा ) का अध्यक्ष पुष्पकमल दाहाल ' प्रचण्ड ' ले नेकपा",
+          "independently_resolved_answer": "E03",
+          "predicted_answer": null,
+          "reasoning_correct": false,
+          "exact_match": false
+        },
+        {
+          "id": "000406",
+          "task_family": "direct_comparison",
+          "difficulty": "easy",
+          "input_text": "सरस्वतीको उचाइ पार्वती भन्दा कम छ। सरस्वती र पार्वती मध्ये कसको उचाइ बढी छ?",
+          "target_text": "पार्वतीको उचाइ बढी छ।",
+          "generated_text": "काठमाडौं । नेपाल कम्युनिष्ट पार्टी ( नेकपा ) का अध्यक्ष पुष्पकमल दाहाल ' प्रचण्ड ' ले नेकपा",
+          "independently_resolved_answer": "E02",
+          "predicted_answer": null,
+          "reasoning_correct": false,
+          "exact_match": false
+        }
+      ],
+      "equality_relation_missing": [
+        {
+          "id": "002077",
+          "task_family": "general_comparison",
+          "difficulty": "medium",
+          "input_text": "मञ्जु र विवेकको मात्रा बराबर छ। विवेक र विनोदको मात्रा बराबर छ। मञ्जु र विनोद तुलना गर्दा, के उनीहरूको मात्रा बराबर छ?",
+          "target_text": "मञ्जु र विनोदको मात्रा बराबर छ।",
+          "generated_text": "काठमाडौं । नेपाल राष्ट्र बैंकले चालु आर्थिक वर्षको पहिलो त्रैमा समा रू . १ अर्ब ५०",
+          "independently_resolved_answer": null,
+          "predicted_answer": "EQUAL_CASE",
+          "reasoning_correct": false,
+          "exact_match": false
+        },
+        {
+          "id": "000954",
+          "task_family": "direct_comparison",
+          "difficulty": "medium",
+          "input_text": "दिइएको जानकारी अनुसार, सुरेश र मञ्जुको उमेर बराबर छ। के मञ्जु र सुरेश को उमेर समान छ?",
+          "target_text": "मञ्जु र सुरेशको उमेर बराबर छ।",
+          "generated_text": "काठमाडौं । नेपाल राष्ट्र बैंकले चालु आर्थिक वर्षको पहिलो त्रैमा समा रू . १ अर्ब ५०",
+          "independently_resolved_answer": null,
+          "predicted_answer": "EQUAL_CASE",
+          "reasoning_correct": false,
+          "exact_match": false
+        }
+      ]
+    },
+    "success_examples": [],
+    "rc_true_em_false_examples": []
+  },
+  "ne_sft": {
+    "overall": {
+      "total": 700,
+      "reasoning_correct": 100,
+      "reasoning_incorrect": 600,
+      "error_categories": {
+        "no_recognizable_answer": 502,
+        "wrong_entity": 90,
+        "equality_relation_missing": 7,
+        "ambiguous_multiple_entities": 1
+      }
+    },
+    "per_family": {
+      "direct_comparison": {
+        "total": 100,
+        "reasoning_correct": 14,
+        "reasoning_incorrect": 86,
+        "error_categories": {
+          "no_recognizable_answer": 75,
+          "wrong_entity": 8,
+          "equality_relation_missing": 3
+        }
+      },
+      "largest_smallest": {
+        "total": 100,
+        "reasoning_correct": 7,
+        "reasoning_incorrect": 93,
+        "error_categories": {
+          "no_recognizable_answer": 78,
+          "wrong_entity": 15
+        }
+      },
+      "general_comparison": {
+        "total": 100,
+        "reasoning_correct": 18,
+        "reasoning_incorrect": 82,
+        "error_categories": {
+          "wrong_entity": 10,
+          "equality_relation_missing": 4,
+          "no_recognizable_answer": 68
+        }
+      },
+      "two_hop_transitivity": {
+        "total": 100,
+        "reasoning_correct": 9,
+        "reasoning_incorrect": 91,
+        "error_categories": {
+          "no_recognizable_answer": 76,
+          "wrong_entity": 15
+        }
+      },
+      "three_hop_transitivity": {
+        "total": 100,
+        "reasoning_correct": 22,
+        "reasoning_incorrect": 78,
+        "error_categories": {
+          "no_recognizable_answer": 65,
+          "wrong_entity": 12,
+          "ambiguous_multiple_entities": 1
+        }
+      },
+      "reversed_relation": {
+        "total": 100,
+        "reasoning_correct": 17,
+        "reasoning_incorrect": 83,
+        "error_categories": {
+          "no_recognizable_answer": 64,
+          "wrong_entity": 19
+        }
+      },
+      "mixed_equality": {
+        "total": 100,
+        "reasoning_correct": 13,
+        "reasoning_incorrect": 87,
+        "error_categories": {
+          "no_recognizable_answer": 76,
+          "wrong_entity": 11
+        }
+      }
+    },
+    "per_difficulty": {
+      "easy": {
+        "total": 210,
+        "reasoning_correct": 35,
+        "reasoning_incorrect": 175,
+        "error_categories": {
+          "no_recognizable_answer": 148,
+          "wrong_entity": 26,
+          "equality_relation_missing": 1
+        }
+      },
+      "medium": {
+        "total": 280,
+        "reasoning_correct": 32,
+        "reasoning_incorrect": 248,
+        "error_categories": {
+          "no_recognizable_answer": 208,
+          "wrong_entity": 35,
+          "equality_relation_missing": 5
+        }
+      },
+      "hard": {
+        "total": 210,
+        "reasoning_correct": 33,
+        "reasoning_incorrect": 177,
+        "error_categories": {
+          "no_recognizable_answer": 146,
+          "wrong_entity": 29,
+          "equality_relation_missing": 1,
+          "ambiguous_multiple_entities": 1
+        }
+      }
+    },
+    "exact_match_vs_reasoning": {
+      "rc_true_em_false": 41,
+      "rc_false_em_false": 587,
+      "rc_true_em_true": 59
+    },
+    "representative_errors": {
+      "wrong_entity": [
+        {
+          "id": "006236",
+          "task_family": "mixed_equality",
+          "difficulty": "hard",
+          "input_text": "विनोद र सुरेशको मात्रा बराबर छ। मञ्जुको मात्रा सरस्वती भन्दा कम छ। विनोदको मात्रा सरस्वती भन्दा बढी छ। सुरेश र मञ्जु मध्ये कसको मात्रा बढी छ?",
+          "target_text": "सुरेशको मात्रा बढी छ।",
+          "generated_text": "म ञ्जु को मात्रा सबैभन्दा कम छ ।",
+          "independently_resolved_answer": "E01",
+          "predicted_answer": "E04",
+          "reasoning_correct": false,
+          "exact_match": false
+        },
+        {
+          "id": "001256",
+          "task_family": "largest_smallest",
+          "difficulty": "hard",
+          "input_text": "विनोदको मूल्य 8887 रुपैयाँ छ। मञ्जुको मूल्य 8714 रुपैयाँ छ। सुरेशको मूल्य 8714 रुपैयाँ छ, तथा दुर्गाको मूल्य 2943 रुपैयाँ छ। विनोद र मञ्जु मध्ये कसको मूल्य बढी छ?",
+          "target_text": "दुर्गाको मूल्य सबैभन्दा कम छ।",
+          "generated_text": "म ञ्जु को मूल्य सबैभन्दा बढी छ ।",
+          "independently_resolved_answer": "E04",
+          "predicted_answer": "E02",
+          "reasoning_correct": false,
+          "exact_match": false
+        }
+      ],
+      "ambiguous_multiple_entities": [
+        {
+          "id": "004528",
+          "task_family": "three_hop_transitivity",
+          "difficulty": "hard",
+          "input_text": "दुर्गाको उमेर विवेक भन्दा बढी छ, र सागरको उमेर विवेक भन्दा कम छ, तथा पार्वती र दुर्गाको उमेर बराबर छ। बताउनुहोस्, पार्वती र सागर मध्ये कसको उमेर बढी छ?",
+          "target_text": "पार्वतीको उमेर बढी छ।",
+          "generated_text": "पार् वती र सागर को उमेर बढी छ ।",
+          "independently_resolved_answer": "E01",
+          "predicted_answer": "AMBIGUOUS",
+          "reasoning_correct": false,
+          "exact_match": false
+        }
+      ],
+      "no_recognizable_answer": [
+        {
+          "id": "005275",
+          "task_family": "reversed_relation",
+          "difficulty": "medium",
+          "input_text": "दुर्गाको उचाइ सागर भन्दा कम छ। सन्तोषको उचाइ दुर्गा भन्दा कम छ। सन्तोष र सागर मध्ये कसको उचाइ बढी छ?",
+          "target_text": "सागरको उचाइ बढी छ।",
+          "generated_text": "किरण को उचाइ बढी छ ।",
+          "independently_resolved_answer": "E01",
+          "predicted_answer": null,
+          "reasoning_correct": false,
+          "exact_match": false
+        },
+        {
+          "id": "001782",
+          "task_family": "largest_smallest",
+          "difficulty": "medium",
+          "input_text": "ज्ञात तथ्यहरूको आधारमा: सुरेशको मात्रा लक्ष्मी भन्दा बढी छ, सागरको मात्रा सुरेश भन्दा बढी छ। सागर र सुरेश मध्ये कसको मात्रा बढी छ?",
+          "target_text": "लक्ष्मीको मात्रा सबैभन्दा कम छ।",
+          "generated_text": "किरण को मात्रा सबैभन्दा बढी छ ।",
+          "independently_resolved_answer": "E03",
+          "predicted_answer": null,
+          "reasoning_correct": false,
+          "exact_match": false
+        }
+      ],
+      "equality_relation_missing": [
+        {
+          "id": "000940",
+          "task_family": "direct_comparison",
+          "difficulty": "medium",
+          "input_text": "सन्तोष र सरस्वतीको उचाइ बराबर छ। के सरस्वती र सन्तोष को उचाइ बराबर छ?",
+          "target_text": "सरस्वती र सन्तोषको उचाइ बराबर छ।",
+          "generated_text": "सरस्वती र आशि र आशि र आशि र आशि र आशि र आशि र आशि र आशि र आशि र आशि र आशि र आशि र आशि र आशि र",
+          "independently_resolved_answer": null,
+          "predicted_answer": "EQUAL_CASE",
+          "reasoning_correct": false,
+          "exact_match": false
+        },
+        {
+          "id": "002867",
+          "task_family": "general_comparison",
+          "difficulty": "medium",
+          "input_text": "लक्ष्मीको मात्रा 461 एकाइ छ। सन्तोषको मात्रा 461 एकाइ छ। मञ्जुको मात्रा 461 एकाइ छ। के लक्ष्मी र मञ्जु को मात्रा समान छ?",
+          "target_text": "लक्ष्मी र मञ्जुको मात्रा बराबर छ।",
+          "generated_text": "लक्ष्मी र म ञ्जु र म ञ्जु र म ञ्जु र म ञ्जु र म ञ्जु र म ञ्जु र म ञ्जु र म ञ्जु र म ञ्जु र म",
+          "independently_resolved_answer": null,
+          "predicted_answer": "EQUAL_CASE",
+          "reasoning_correct": false,
+          "exact_match": false
+        }
+      ]
+    },
+    "success_examples": [
+      {
+        "id": "001477",
+        "task_family": "largest_smallest",
+        "difficulty": "easy",
+        "input_text": "ज्ञात तथ्यहरूको आधारमा: मञ्जुको मूल्य विनोद भन्दा बढी छ, विनोदको मूल्य सरस्वती भन्दा बढी छ। मञ्जु र विनोद मध्ये कसको मूल्य बढी छ?",
+        "target_text": "मञ्जुको मूल्य सबैभन्दा बढी छ।",
+        "generated_text": "म ञ्जु को मूल्य सबैभन्दा बढी छ ।",
+        "independently_resolved_answer": "E01",
+        "predicted_answer": "E01",
+        "reasoning_correct": true,
+        "exact_match": true
+      },
+      {
+        "id": "006483",
+        "task_family": "mixed_equality",
+        "difficulty": "hard",
+        "input_text": "पार्वतीको मूल्य विवेक भन्दा बढी छ। विवेक र मञ्जुको मूल्य बराबर छ। पार्वतीको मूल्य सरस्वती भन्दा कम छ। यी मध्ये कसको मूल्य कम छ: सरस्वती वा मञ्जु?",
+        "target_text": "मञ्जुको मूल्य कम छ।",
+        "generated_text": "म ञ्जु को मूल्य कम छ ।",
+        "independently_resolved_answer": "E04",
+        "predicted_answer": "E04",
+        "reasoning_correct": true,
+        "exact_match": true
+      },
+      {
+        "id": "000970",
+        "task_family": "direct_comparison",
+        "difficulty": "easy",
+        "input_text": "दिइएको जानकारी अनुसार, विनोदको उमेर मञ्जु भन्दा बढी छ। यी मध्ये कसको उमेर कम छ: विनोद वा मञ्जु?",
+        "target_text": "मञ्जुको उमेर कम छ।",
+        "generated_text": "म ञ्जु को उमेर कम छ ।",
+        "independently_resolved_answer": "E02",
+        "predicted_answer": "E02",
+        "reasoning_correct": true,
+        "exact_match": true
+      }
+    ],
+    "rc_true_em_false_examples": [
+      {
+        "id": "000040",
+        "task_family": "direct_comparison",
+        "difficulty": "easy",
+        "input_text": "विवेकको उचाइ सरस्वती भन्दा कम छ। बताउनुहोस्, विवेक र सरस्वती मध्ये कसको उचाइ बढी छ?",
+        "target_text": "सरस्वतीको उचाइ बढी छ।",
+        "generated_text": "सरस्वती को उचाइ बढी छ ।",
+        "independently_resolved_answer": "E02",
+        "predicted_answer": "E02",
+        "reasoning_correct": true,
+        "exact_match": false
+      },
+      {
+        "id": "000045",
+        "task_family": "direct_comparison",
+        "difficulty": "easy",
+        "input_text": "सन्तोष र पार्वतीको मात्रा बराबर छ। के सन्तोष र पार्वती को मात्रा बराबर छ?",
+        "target_text": "सन्तोष र पार्वतीको मात्रा बराबर छ।",
+        "generated_text": "सन्तोष र पार् वती को मात्रा बराबर छ ।",
+        "independently_resolved_answer": null,
+        "predicted_answer": "EQUAL_CASE",
+        "reasoning_correct": true,
+        "exact_match": false
+      },
+      {
+        "id": "000157",
+        "task_family": "direct_comparison",
+        "difficulty": "easy",
+        "input_text": "सरस्वतीको उचाइ 188 सेमी छ। लक्ष्मीको उचाइ 188 सेमी छ। के सरस्वती र लक्ष्मी को उचाइ बराबर छ?",
+        "target_text": "सरस्वती र लक्ष्मीको उचाइ बराबर छ।",
+        "generated_text": "सरस्वती र गणेश र लक्ष्मी को उचाइ बराबर छ ।",
+        "independently_resolved_answer": null,
+        "predicted_answer": "EQUAL_CASE",
+        "reasoning_correct": true,
+        "exact_match": false
+      }
+    ]
+  }
+}

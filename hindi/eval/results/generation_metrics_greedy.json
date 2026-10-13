@@ -1,0 +1,16 @@
+{
+    "language": "hindi",
+    "split": "test",
+    "generation_method": "greedy",
+    "temperature": "N/A",
+    "seed": 42,
+    "prefix_len": 64,
+    "max_new_tokens": 64,
+    "num_examples": 500,
+    "bleu": 2.0918956325026428,
+    "chrf": 13.434768619966292,
+    "rouge_l": 0.1121493888030017,
+    "repetition_rate": 0.6114189651951933,
+    "distinct_1": 0.07009851375206423,
+    "distinct_2": 0.20309477756286268
+}

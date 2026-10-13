@@ -1,0 +1,122 @@
+[
+  {
+    "id": "000040",
+    "task_family": "direct_comparison",
+    "difficulty": "easy",
+    "input_text": "करण की ऊँचाई कुणाल से कम है। बताइए, करण और कुणाल में किसकी ऊँचाई अधिक है?",
+    "target_text": "कुणाल की ऊँचाई अधिक है।",
+    "generated_text": "करण की ऊँ चाई अधिक है ।",
+    "independently_resolved_answer": "E02",
+    "predicted_answer": "E01",
+    "reasoning_correct": false,
+    "exact_match": false
+  },
+  {
+    "id": "000041",
+    "task_family": "direct_comparison",
+    "difficulty": "easy",
+    "input_text": "दी गई जानकारी के अनुसार, करण की मात्रा सिमरन से अधिक है। इनमें से किसकी मात्रा कम है: करण या सिमरन?",
+    "target_text": "सिमरन की मात्रा कम है。",
+    "generated_text": "करण की मात्रा कम है 。",
+    "independently_resolved_answer": "E02",
+    "predicted_answer": "E01",
+    "reasoning_correct": false,
+    "exact_match": false
+  },
+  {
+    "id": "000045",
+    "task_family": "direct_comparison",
+    "difficulty": "easy",
+    "input_text": "दी गई जानकारी के अनुसार, प्रवीण और पंकज की मात्रा बराबर है। क्या प्रवीण और पंकज की मात्रा एक समान है?",
+    "target_text": "प्रवीण और पंकज की मात्रा बराबर है।",
+    "generated_text": "अंकित और राजेश की मात्रा बराबर है ।",
+    "independently_resolved_answer": null,
+    "predicted_answer": "EQUAL_CASE",
+    "reasoning_correct": false,
+    "exact_match": false
+  },
+  {
+    "id": "000047",
+    "task_family": "direct_comparison",
+    "difficulty": "easy",
+    "input_text": "मीनाक्षी और ज्योति की मात्रा बराबर है। क्या मीनाक्षी और ज्योति की मात्रा बराबर है?",
+    "target_text": "मीनाक्षी और ज्योति की मात्रा बराबर है।",
+    "generated_text": "मी ना क्षी और ज्योति की मात्रा बराबर है ।",
+    "independently_resolved_answer": null,
+    "predicted_answer": "EQUAL_CASE",
+    "reasoning_correct": true,
+    "exact_match": true
+  },
+  {
+    "id": "000050",
+    "task_family": "direct_comparison",
+    "difficulty": "medium",
+    "input_text": "मीनाक्षी की ऊँचाई पंकज से अधिक है। पंकज और मीनाक्षी में से किसकी ऊँचाई अधिक है?",
+    "target_text": "मीनाक्षी की ऊँचाई अधिक है।",
+    "generated_text": "मी ना क्षी की ऊँ चाई अधिक है ।",
+    "independently_resolved_answer": "E01",
+    "predicted_answer": "E01",
+    "reasoning_correct": true,
+    "exact_match": true
+  },
+  {
+    "id": "000055",
+    "task_family": "direct_comparison",
+    "difficulty": "medium",
+    "input_text": "ज्योति की ऊँचाई रिया से अधिक है। रिया और ज्योति में से किसकी ऊँचाई अधिक है?",
+    "target_text": "ज्योति की ऊँचाई अधिक है।",
+    "generated_text": "ज्योति की ऊँ चाई अधिक है ।",
+    "independently_resolved_answer": "E01",
+    "predicted_answer": "E01",
+    "reasoning_correct": true,
+    "exact_match": true
+  },
+  {
+    "id": "000078",
+    "task_family": "direct_comparison",
+    "difficulty": "easy",
+    "input_text": "वरुण की कीमत मुस्कान से अधिक है। बताइए, वरुण और मुस्कान में किसकी कीमत अधिक है?",
+    "target_text": "वरुण की कीमत अधिक है।",
+    "generated_text": "वरुण की कीमत अधिक है ।",
+    "independently_resolved_answer": "E01",
+    "predicted_answer": "E01",
+    "reasoning_correct": true,
+    "exact_match": true
+  },
+  {
+    "id": "000093",
+    "task_family": "direct_comparison",
+    "difficulty": "medium",
+    "input_text": "दी गई जानकारी के अनुसार, वरुण की उम्र कुणाल से अधिक है। इनमें से किसकी उम्र कम है: कुणाल या वरुण?",
+    "target_text": "कुणाल की उम्र कम है。",
+    "generated_text": "कु णा ल की उम्र कम है 。",
+    "independently_resolved_answer": "E02",
+    "predicted_answer": "E02",
+    "reasoning_correct": true,
+    "exact_match": true
+  },
+  {
+    "id": "000104",
+    "task_family": "direct_comparison",
+    "difficulty": "easy",
+    "input_text": "दी गई जानकारी के अनुसार, वरुण की उम्र 36 वर्ष है। इसके अतिरिक्त, प्रवीण की उम्र 36 वर्ष है। क्या वरुण और प्रवीण की उम्र एक समान है?",
+    "target_text": "वरुण और प्रवीण की उम्र बराबर है।",
+    "generated_text": "वरुण और प्रवीण की उम्र बराबर है ।",
+    "independently_resolved_answer": null,
+    "predicted_answer": "EQUAL_CASE",
+    "reasoning_correct": true,
+    "exact_match": true
+  },
+  {
+    "id": "000113",
+    "task_family": "direct_comparison",
+    "difficulty": "easy",
+    "input_text": "कुणाल की कीमत पंकज से अधिक है। बताइए, कुणाल और पंकज में किसकी कीमत अधिक है?",
+    "target_text": "कुणाल की कीमत अधिक है।",
+    "generated_text": "राजेश की कीमत अधिक है ।",
+    "independently_resolved_answer": "E01",
+    "predicted_answer": null,
+    "reasoning_correct": false,
+    "exact_match": false
+  }
+]

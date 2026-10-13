@@ -1,0 +1,114 @@
+{
+  "0": [
+    {
+      "head": 0,
+      "pre_entropy": 2.9991331463334454,
+      "sft_entropy": 2.8737532909598587,
+      "delta_entropy": -0.12537985537358676,
+      "pre_distance": 6.214770135871866,
+      "sft_distance": 5.998301111223855,
+      "delta_distance": -0.21646902464801165
+    },
+    {
+      "head": 1,
+      "pre_entropy": 3.366376997497832,
+      "sft_entropy": 3.120867148104494,
+      "delta_entropy": -0.2455098493933381,
+      "pre_distance": 6.7636162287236985,
+      "sft_distance": 5.971959344768378,
+      "delta_distance": -0.7916568839553202
+    },
+    {
+      "head": 2,
+      "pre_entropy": 2.5005329225630017,
+      "sft_entropy": 2.229529355183564,
+      "delta_entropy": -0.27100356737943754,
+      "pre_distance": 4.5263629396309755,
+      "sft_distance": 4.458994337957062,
+      "delta_distance": -0.06736860167391345
+    },
+    {
+      "head": 3,
+      "pre_entropy": 1.6330492415076658,
+      "sft_entropy": 1.5058442202296536,
+      "delta_entropy": -0.12720502127801225,
+      "pre_distance": 2.706057272225548,
+      "sft_distance": 2.694173987458709,
+      "delta_distance": -0.011883284766838642
+    },
+    {
+      "head": 4,
+      "pre_entropy": 2.87693561542833,
+      "sft_entropy": 2.6158639904279144,
+      "delta_entropy": -0.2610716250004157,
+      "pre_distance": 5.119617787888608,
+      "sft_distance": 5.017625291084322,
+      "delta_distance": -0.10199249680428668
+    },
+    {
+      "head": 5,
+      "pre_entropy": 2.706622596260742,
+      "sft_entropy": 2.5574403102314553,
+      "delta_entropy": -0.14918228602928663,
+      "pre_distance": 4.73369669677006,
+      "sft_distance": 4.384596380079774,
+      "delta_distance": -0.3491003166902864
+    }
+  ],
+  "11": [
+    {
+      "head": 0,
+      "pre_entropy": 2.8870278515057697,
+      "sft_entropy": 2.3819041790447253,
+      "delta_entropy": -0.5051236724610444,
+      "pre_distance": 7.344313483838373,
+      "sft_distance": 7.848076559528131,
+      "delta_distance": 0.5037630756897586
+    },
+    {
+      "head": 1,
+      "pre_entropy": 3.026630377752629,
+      "sft_entropy": 2.3798954812995197,
+      "delta_entropy": -0.6467348964531094,
+      "pre_distance": 10.729170034603207,
+      "sft_distance": 10.573836331131531,
+      "delta_distance": -0.1553337034716762
+    },
+    {
+      "head": 2,
+      "pre_entropy": 3.2388717811810284,
+      "sft_entropy": 2.6182548642250496,
+      "delta_entropy": -0.6206169169559788,
+      "pre_distance": 6.25239409504875,
+      "sft_distance": 4.208442581225167,
+      "delta_distance": -2.0439515138235826
+    },
+    {
+      "head": 3,
+      "pre_entropy": 2.2600666497752213,
+      "sft_entropy": 1.5795677135899204,
+      "delta_entropy": -0.6804989361853009,
+      "pre_distance": 9.169896113362979,
+      "sft_distance": 9.975067625164298,
+      "delta_distance": 0.8051715118013192
+    },
+    {
+      "head": 4,
+      "pre_entropy": 3.049930334292727,
+      "sft_entropy": 1.6357697250814356,
+      "delta_entropy": -1.4141606092112915,
+      "pre_distance": 10.330991578768227,
+      "sft_distance": 10.882107323756946,
+      "delta_distance": 0.551115744988719
+    },
+    {
+      "head": 5,
+      "pre_entropy": 3.2833035094744725,
+      "sft_entropy": 2.3747453688613724,
+      "delta_entropy": -0.9085581406131,
+      "pre_distance": 8.675069972441824,
+      "sft_distance": 8.895076006831815,
+      "delta_distance": 0.220006034389991
+    }
+  ]
+}

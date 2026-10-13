@@ -1,0 +1,12 @@
+{
+  "0": {
+    "Local": 1,
+    "Long-range": 5,
+    "Focused": 2
+  },
+  "11": {
+    "Local": 5,
+    "Long-range": 3,
+    "Focused": 0
+  }
+}

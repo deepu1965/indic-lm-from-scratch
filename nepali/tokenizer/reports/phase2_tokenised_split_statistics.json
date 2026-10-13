@@ -1,0 +1,126 @@
+{
+  "phase": "Phase 2 -- Corpus Tokenisation",
+  "generated_at": "2026-09-04T07:59:36.703276+00:00",
+  "language": "nepali",
+  "tokenizer_path": "nepali/tokenizer/models/bpe_v10000.json",
+  "vocab_size": 10000,
+  "splits": [
+    {
+      "split": "train",
+      "input_file": "nepali/corpus/splits/train.jsonl",
+      "output_file": "nepali/corpus/tokenised_splits/train.jsonl",
+      "documents_ok": 1695928,
+      "documents_skipped": 0,
+      "documents_empty_text": 0,
+      "documents_malformed": 0,
+      "total_tokens": 1270578286,
+      "avg_tokens_per_doc": 749.19,
+      "by_source_category": {
+        "manual": {
+          "documents": 155336,
+          "tokens": 139410635,
+          "avg_tokens_per_doc": 897.48
+        },
+        "public": {
+          "documents": 1540592,
+          "tokens": 1131167651,
+          "avg_tokens_per_doc": 734.24
+        },
+        "other": {
+          "documents": 0,
+          "tokens": 0,
+          "avg_tokens_per_doc": 0
+        }
+      },
+      "unknown_source_values": {},
+      "vocab_usage": {
+        "vocab_size": 10000,
+        "total_token_occurrences": 1270578286,
+        "unique_token_ids_observed": 9994,
+        "coverage_pct": 99.94,
+        "zero_frequency_tokens": 6,
+        "tokens_occurring_exactly_1": 166,
+        "tokens_occurring_lt_10": 375,
+        "tokens_occurring_lt_100": 564
+      }
+    },
+    {
+      "split": "val",
+      "input_file": "nepali/corpus/splits/val.jsonl",
+      "output_file": "nepali/corpus/tokenised_splits/val.jsonl",
+      "documents_ok": 17325,
+      "documents_skipped": 0,
+      "documents_empty_text": 0,
+      "documents_malformed": 0,
+      "total_tokens": 12929769,
+      "avg_tokens_per_doc": 746.31,
+      "by_source_category": {
+        "manual": {
+          "documents": 1589,
+          "tokens": 1457272,
+          "avg_tokens_per_doc": 917.1
+        },
+        "public": {
+          "documents": 15736,
+          "tokens": 11472497,
+          "avg_tokens_per_doc": 729.06
+        },
+        "other": {
+          "documents": 0,
+          "tokens": 0,
+          "avg_tokens_per_doc": 0
+        }
+      },
+      "unknown_source_values": {},
+      "vocab_usage": {
+        "vocab_size": 10000,
+        "total_token_occurrences": 12929769,
+        "unique_token_ids_observed": 9442,
+        "coverage_pct": 94.42,
+        "zero_frequency_tokens": 558,
+        "tokens_occurring_exactly_1": 66,
+        "tokens_occurring_lt_10": 222,
+        "tokens_occurring_lt_100": 848
+      }
+    },
+    {
+      "split": "test",
+      "input_file": "nepali/corpus/splits/test.jsonl",
+      "output_file": "nepali/corpus/tokenised_splits/test.jsonl",
+      "documents_ok": 17163,
+      "documents_skipped": 0,
+      "documents_empty_text": 0,
+      "documents_malformed": 0,
+      "total_tokens": 12859213,
+      "avg_tokens_per_doc": 749.24,
+      "by_source_category": {
+        "manual": {
+          "documents": 1464,
+          "tokens": 1375527,
+          "avg_tokens_per_doc": 939.57
+        },
+        "public": {
+          "documents": 15699,
+          "tokens": 11483686,
+          "avg_tokens_per_doc": 731.49
+        },
+        "other": {
+          "documents": 0,
+          "tokens": 0,
+          "avg_tokens_per_doc": 0
+        }
+      },
+      "unknown_source_values": {},
+      "vocab_usage": {
+        "vocab_size": 10000,
+        "total_token_occurrences": 12859213,
+        "unique_token_ids_observed": 9434,
+        "coverage_pct": 94.34,
+        "zero_frequency_tokens": 566,
+        "tokens_occurring_exactly_1": 44,
+        "tokens_occurring_lt_10": 195,
+        "tokens_occurring_lt_100": 841
+      }
+    }
+  ]
+}

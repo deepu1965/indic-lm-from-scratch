@@ -1,0 +1,134 @@
+# ============================================================
+# Phase 3.1 — Logical Generator Configuration
+# ============================================================
+# All generation parameters are centralised here.
+# Do NOT hardcode these values inside the Python modules.
+
+seed: 42
+total_examples: 7000
+examples_per_family: 1000
+
+# ────────────────────────────────────────────────────────────
+# Train / validation / test split sizes
+# ────────────────────────────────────────────────────────────
+splits:
+  train: 5600   # 80%
+  val:   700    # 10%
+  test:  700    # 10%
+
+# ────────────────────────────────────────────────────────────
+# Per-family difficulty distributions (must sum to 1000 each)
+# ────────────────────────────────────────────────────────────
+task_families:
+  direct_comparison:
+    easy:   700
+    medium: 300
+    hard:     0
+
+  largest_smallest:
+    easy:   400
+    medium: 400
+    hard:   200
+
+  general_comparison:
+    easy:   500
+    medium: 400
+    hard:   100
+
+  two_hop_transitivity:
+    easy:   100
+    medium: 500
+    hard:   400
+
+  three_hop_transitivity:
+    easy:     0
+    medium: 300
+    hard:   700
+
+  reversed_relation:
+    easy:   400
+    medium: 400
+    hard:   200
+
+  mixed_equality:
+    easy:     0
+    medium: 500
+    hard:   500
+
+# ────────────────────────────────────────────────────────────
+# Attribute / representation distributions (per family)
+# ────────────────────────────────────────────────────────────
+# Total per family = 1000
+# Per attribute    = 250  (height / age / price / quantity)
+# Relational       = 750
+# Numerical        = 250
+#
+# Exact (attr, rep) slot counts that satisfy both constraints:
+#   height    relational 188 + numerical 62  = 250
+#   age       relational 188 + numerical 62  = 250
+#   price     relational 187 + numerical 63  = 250
+#   quantity  relational 187 + numerical 63  = 250
+#   ─────────────────────────────────────────────
+#   relational total: 750   numerical total: 250
+attributes_per_family: 250
+relational_per_family: 750
+numerical_per_family:  250
+
+# ────────────────────────────────────────────────────────────
+# Numeric value ranges (for "numerical" representation)
+# Equality → identical values; strict order → strictly different
+# ────────────────────────────────────────────────────────────
+attribute_ranges:
+  height:
+    min:  140
+    max:  200
+    unit: cm
+  age:
+    min:  10
+    max:  80
+    unit: years
+  price:
+    min:  100
+    max:  10000
+    unit: ""
+  quantity:
+    min:  10
+    max:  1000
+    unit: ""
+
+# ────────────────────────────────────────────────────────────
+# Relation algebra
+# ────────────────────────────────────────────────────────────
+allowed_relations:
+  - greater_than
+  - less_than
+  - equal
+
+# ────────────────────────────────────────────────────────────
+# Entity counts per task type (informational; enforced in code)
+# ────────────────────────────────────────────────────────────
+entity_counts:
+  direct_comparison:   2
+  two_hop_transitivity: 3
+  three_hop_transitivity: 4
+  largest_smallest_easy: 3
+  largest_smallest_medium: [3, 4]
+  largest_smallest_hard: 4
+  general_comparison_easy: 2
+  general_comparison_medium: 3
+  general_comparison_hard: 4
+  reversed_relation_easy: 2
+  reversed_relation_medium: 3
+  reversed_relation_hard: 4
+  mixed_equality_medium: 3
+  mixed_equality_hard: [4, 5]
+
+# ────────────────────────────────────────────────────────────
+# Generation control
+# ────────────────────────────────────────────────────────────
+max_retries: 200   # per example before raising GenerationError
+
+# ────────────────────────────────────────────────────────────
+# Output
+# ────────────────────────────────────────────────────────────
+output_path: "phase3/outputs"

@@ -1,0 +1,193 @@
+{
+  "total_examples": 7000,
+  "generation_time_seconds": 0.46,
+  "by_task_family": {
+    "direct_comparison": 1000,
+    "largest_smallest": 1000,
+    "general_comparison": 1000,
+    "two_hop_transitivity": 1000,
+    "three_hop_transitivity": 1000,
+    "reversed_relation": 1000,
+    "mixed_equality": 1000
+  },
+  "by_difficulty": {
+    "easy": 2100,
+    "medium": 2800,
+    "hard": 2100
+  },
+  "by_attribute": {
+    "height": 1750,
+    "price": 1750,
+    "age": 1750,
+    "quantity": 1750
+  },
+  "by_representation": {
+    "relational": 5250,
+    "numerical": 1750
+  },
+  "by_split": {
+    "train": 5600,
+    "val": 700,
+    "test": 700
+  },
+  "by_relation_pattern": {
+    "P02": 507,
+    "P01": 916,
+    "P03": 477,
+    "P04": 1120,
+    "P08": 722,
+    "P10": 621,
+    "P_custom": 510,
+    "P05": 265,
+    "P06": 559,
+    "P07": 548,
+    "P11": 319,
+    "P13": 325,
+    "P15": 111
+  },
+  "relation_distribution": {
+    "less_than": 3584,
+    "greater_than": 6897,
+    "equal": 3928
+  },
+  "ground_truth_relation_distribution": {
+    "less_than": 2388,
+    "greater_than": 2888,
+    "equal": 724
+  },
+  "avg_entities_per_example": 3.058,
+  "avg_reasoning_path_length": 3.058,
+  "avg_facts_per_example": 2.058,
+  "family_breakdown": {
+    "direct_comparison": {
+      "difficulty": {
+        "easy": 700,
+        "medium": 300
+      },
+      "attribute": {
+        "height": 250,
+        "price": 250,
+        "age": 250,
+        "quantity": 250
+      },
+      "representation": {
+        "relational": 750,
+        "numerical": 250
+      }
+    },
+    "largest_smallest": {
+      "difficulty": {
+        "easy": 400,
+        "medium": 400,
+        "hard": 200
+      },
+      "attribute": {
+        "quantity": 250,
+        "height": 250,
+        "price": 250,
+        "age": 250
+      },
+      "representation": {
+        "numerical": 250,
+        "relational": 750
+      }
+    },
+    "general_comparison": {
+      "difficulty": {
+        "easy": 500,
+        "medium": 400,
+        "hard": 100
+      },
+      "attribute": {
+        "price": 250,
+        "quantity": 250,
+        "height": 250,
+        "age": 250
+      },
+      "representation": {
+        "relational": 750,
+        "numerical": 250
+      }
+    },
+    "two_hop_transitivity": {
+      "difficulty": {
+        "hard": 400,
+        "medium": 500,
+        "easy": 100
+      },
+      "attribute": {
+        "price": 250,
+        "height": 250,
+        "age": 250,
+        "quantity": 250
+      },
+      "representation": {
+        "relational": 750,
+        "numerical": 250
+      }
+    },
+    "three_hop_transitivity": {
+      "difficulty": {
+        "hard": 700,
+        "medium": 300
+      },
+      "attribute": {
+        "quantity": 250,
+        "age": 250,
+        "price": 250,
+        "height": 250
+      },
+      "representation": {
+        "relational": 750,
+        "numerical": 250
+      }
+    },
+    "reversed_relation": {
+      "difficulty": {
+        "medium": 400,
+        "hard": 200,
+        "easy": 400
+      },
+      "attribute": {
+        "price": 250,
+        "height": 250,
+        "quantity": 250,
+        "age": 250
+      },
+      "representation": {
+        "relational": 750,
+        "numerical": 250
+      }
+    },
+    "mixed_equality": {
+      "difficulty": {
+        "medium": 500,
+        "hard": 500
+      },
+      "attribute": {
+        "price": 250,
+        "height": 250,
+        "age": 250,
+        "quantity": 250
+      },
+      "representation": {
+        "relational": 750,
+        "numerical": 250
+      }
+    }
+  },
+  "generation_internals": {
+    "rejections_per_family": {
+      "general_comparison": 170
+    },
+    "attempts_per_family": {
+      "direct_comparison": 1000,
+      "largest_smallest": 1000,
+      "general_comparison": 1170,
+      "two_hop_transitivity": 1000,
+      "three_hop_transitivity": 1000,
+      "reversed_relation": 1000,
+      "mixed_equality": 1000
+    }
+  }
+}
